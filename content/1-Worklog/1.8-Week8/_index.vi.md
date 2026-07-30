@@ -1,59 +1,38 @@
 ---
 title: "Worklog Tuần 8"
-date: 2024-01-01
-weight: 1
+date: 2026-07-26
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu trong tuần:
 
-### Mục tiêu tuần 8:
+* Triển khai mô hình XGBoost đã huấn luyện lên Amazon SageMaker Endpoint để phục vụ dự đoán thời gian thực.
+* Kiểm thử quá trình suy luận (Inference) thông qua Amazon SageMaker Runtime API.
+* Cấu hình giám sát hệ thống bằng Amazon CloudWatch và thiết lập thông báo với Amazon SNS.
+* Kiểm thử toàn bộ hệ thống, hoàn thiện tài liệu Workshop và báo cáo thực tập.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các công việc đã thực hiện trong tuần:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| :--- | :--- | :--- | :--- | :--- |
+| Thứ 2 | - **Triển khai mô hình:**<br>&emsp; + Tạo **SageMaker Model** từ mô hình XGBoost đã được huấn luyện và lưu trên Amazon S3.<br>&emsp; + Tạo **Endpoint Configuration**, cấu hình loại máy (Instance Type) và số lượng Instance.<br>&emsp; + Triển khai mô hình thành **Amazon SageMaker Endpoint** phục vụ dự đoán thời gian thực. | 20/07/2026 | 20/07/2026 | <https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html> |
+| Thứ 3 | - **Kiểm thử Endpoint:**<br>&emsp; + Thực hiện gửi dữ liệu SCADA mẫu đến Endpoint bằng Amazon SageMaker Runtime.<br>&emsp; + Kiểm tra kết quả dự đoán trả về từ mô hình.<br>&emsp; + Xác nhận Endpoint hoạt động ổn định và có thể xử lý yêu cầu dự đoán theo thời gian thực. | 21/07/2026 | 21/07/2026 | <https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-test-endpoints.html> |
+| Thứ 4 | - **Giám sát hệ thống:**<br>&emsp; + Theo dõi các chỉ số hoạt động của Endpoint trên Amazon CloudWatch.<br>&emsp; + Kiểm tra CloudWatch Logs để phân tích quá trình xử lý yêu cầu dự đoán.<br>&emsp; + Đánh giá các thông số như số lượng Request, độ trễ (Latency) và tình trạng Endpoint. | 22/07/2026 | 22/07/2026 | <https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html> |
+| Thứ 5 | - **Thiết lập thông báo:**<br>&emsp; + Tạo **Amazon SNS Topic** phục vụ gửi thông báo.<br>&emsp; + Đăng ký địa chỉ Email nhận cảnh báo.<br>&emsp; + Kiểm thử việc gửi Email thông báo để xác nhận hệ thống hoạt động chính xác. | 23/07/2026 | 23/07/2026 | <https://docs.aws.amazon.com/sns/latest/dg/welcome.html> |
+| Thứ 6 | - **Kiểm thử và hoàn thiện dự án:**<br>&emsp; + Thực hiện kiểm thử toàn bộ quy trình từ triển khai mô hình, dự đoán đến giám sát và gửi thông báo.<br>&emsp; + Dọn dẹp các tài nguyên AWS không còn sử dụng nhằm tối ưu chi phí.<br>&emsp; + Hoàn thiện Workshop, báo cáo thực tập và slide trình bày dự án. | 24/07/2026 | 24/07/2026 | |
 
+### Kết quả đạt được trong tuần:
 
-### Kết quả đạt được tuần 8:
+* Triển khai thành công mô hình XGBoost lên **Amazon SageMaker Endpoint**, cho phép thực hiện dự đoán lỗi thiết bị SCADA theo thời gian thực thông qua giao thức HTTPS.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Kiểm thử thành công quá trình suy luận bằng cách gửi dữ liệu cảm biến SCADA đến Endpoint và nhận kết quả dự đoán chính xác từ mô hình.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Cấu hình và sử dụng **Amazon CloudWatch** để theo dõi hiệu năng Endpoint, bao gồm các chỉ số về số lượng yêu cầu, độ trễ xử lý và nhật ký hoạt động của hệ thống.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Thiết lập **Amazon SNS** để gửi Email thông báo khi xảy ra các sự kiện cần giám sát, giúp tăng khả năng theo dõi và vận hành hệ thống.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hoàn thành việc kiểm thử toàn bộ quy trình của nền tảng **SCADA Fault Prediction Platform**, từ huấn luyện mô hình, triển khai, dự đoán, giám sát đến gửi cảnh báo trên nền tảng AWS.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thiện tài liệu Workshop, báo cáo thực tập và nội dung trình bày dự án, sẵn sàng cho quá trình nghiệm thu và báo cáo kết quả.

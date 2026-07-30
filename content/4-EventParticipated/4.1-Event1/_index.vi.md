@@ -6,120 +6,129 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch: AWS Study Group Community Sharing Session
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Cập nhật các công nghệ mới trong lĩnh vực Cloud Computing và AWS.
+- Chia sẻ kinh nghiệm triển khai thực tế từ các diễn giả trong cộng đồng.
+- Giới thiệu các công nghệ hiện đại phục vụ phát triển phần mềm và hạ tầng.
+- Định hướng học tập và phát triển nghề nghiệp trong lĩnh vực CNTT.
 
-### Danh Sách Diễn Giả
+---
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+### Danh Sách Chủ Đề
+
+Buổi chia sẻ bao gồm nhiều chủ đề đa dạng:
+
+- **Docker – A Containerization Technology**
+- **Combining AWS WAF with Machine Learning for Cyber Attack Detection**
+- **Multiplayer in the Cloud: Connecting Godot Clients with AWS Services**
+- **Cách làm việc nhóm hiệu quả**
+- **AWS Neptune for Building a Graph Knowledge Base**
+- **Từ IT Helpdesk lên Senior Sysadmin: Hành trình tự học và lộ trình phát triển**
+
+---
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Docker – Công nghệ Containerization
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- Giới thiệu tổng quan về Docker và Container.
+- Lợi ích của việc đóng gói ứng dụng thành các container độc lập.
+- So sánh Docker với Virtual Machine và các trường hợp sử dụng phổ biến.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### AWS WAF kết hợp Machine Learning
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- Giới thiệu AWS Web Application Firewall.
+- Phát hiện và giảm thiểu các cuộc tấn công Web.
+- Ứng dụng Machine Learning trong phân tích và nhận diện các hành vi bất thường.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Multiplayer trên AWS
 
-#### Domain-Driven Design (DDD)
+- Xây dựng kiến trúc Multiplayer trên nền tảng Cloud.
+- Kết nối Godot Client với các dịch vụ AWS.
+- Đồng bộ trạng thái trò chơi giữa nhiều người chơi.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### Làm việc nhóm hiệu quả
 
-#### Event-Driven Architecture
+- Phương pháp giao tiếp và phối hợp trong nhóm.
+- Quản lý công việc và phân chia nhiệm vụ.
+- Kinh nghiệm làm việc nhóm trong các dự án phần mềm.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+#### AWS Neptune
 
-#### Compute Evolution
+- Tổng quan về Graph Database.
+- Xây dựng Graph Knowledge Base bằng Amazon Neptune.
+- Một số ứng dụng thực tế của Graph Database trong doanh nghiệp.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+#### Lộ trình nghề nghiệp
 
-#### Amazon Q Developer
+- Chia sẻ quá trình phát triển từ IT Helpdesk lên Senior System Administrator.
+- Những kỹ năng cần thiết trong lĩnh vực System Administration và Cloud.
+- Tầm quan trọng của việc tự học và tích lũy kinh nghiệm thực tế.
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+---
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Kiến thức kỹ thuật
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+- Hiểu rõ hơn về công nghệ Docker và Containerization.
+- Biết thêm về AWS WAF và các giải pháp bảo mật trên AWS.
+- Tiếp cận Graph Database thông qua Amazon Neptune.
+- Tìm hiểu kiến trúc Multiplayer trên nền tảng AWS.
 
-#### Kiến Trúc Kỹ Thuật
+#### Kỹ năng mềm
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+- Nhận thức rõ hơn về vai trò của giao tiếp và làm việc nhóm.
+- Hiểu tầm quan trọng của việc chia sẻ kiến thức trong cộng đồng.
+- Học hỏi kinh nghiệm thực tế từ các diễn giả.
 
-#### Chiến Lược Hiện Đại Hóa
+#### Định hướng nghề nghiệp
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- Có thêm góc nhìn về các vị trí nghề nghiệp trong lĩnh vực CNTT.
+- Xây dựng kế hoạch học tập dài hạn theo định hướng Cloud Engineer.
+- Hiểu rằng việc học tập liên tục là yếu tố quan trọng để phát triển sự nghiệp.
 
-### Ứng Dụng Vào Công Việc
+---
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+### Ứng Dụng Vào Học Tập Và Dự Án
 
-### Trải nghiệm trong event
+Sau sự kiện, mình có thể áp dụng các kiến thức đã học vào quá trình học tập và thực hiện dự án như:
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+- Sử dụng Docker để đơn giản hóa quá trình phát triển và triển khai ứng dụng.
+- Tìm hiểu thêm về AWS WAF nhằm tăng cường bảo mật cho các ứng dụng Web.
+- Nghiên cứu Graph Database để mở rộng kiến thức về các mô hình dữ liệu.
+- Cải thiện kỹ năng làm việc nhóm trong các môn học và đồ án.
+- Tiếp tục xây dựng lộ trình học AWS và các công nghệ Cloud hiện đại.
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+---
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+### Trải Nghiệm Trong Sự Kiện
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+Tham gia buổi chia sẻ của **AWS Study Group** mang lại cho mình nhiều kiến thức bổ ích về công nghệ cũng như định hướng nghề nghiệp. Thay vì chỉ tập trung vào một chủ đề duy nhất, sự kiện bao gồm nhiều bài trình bày với các nội dung đa dạng, từ Docker, AWS WAF, Amazon Neptune đến kỹ năng làm việc nhóm và lộ trình phát triển nghề nghiệp trong lĩnh vực CNTT.
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+Điều mình ấn tượng nhất là các diễn giả không chỉ giới thiệu lý thuyết mà còn chia sẻ nhiều kinh nghiệm thực tế, giúp người tham dự hiểu rõ hơn cách áp dụng các công nghệ AWS vào những dự án thực tế. Ngoài ra, các chủ đề về kỹ năng mềm và định hướng nghề nghiệp cũng mang lại nhiều góc nhìn hữu ích cho sinh viên đang chuẩn bị bước vào môi trường làm việc chuyên nghiệp.
 
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+Thông qua sự kiện, mình có thêm động lực để tiếp tục học tập, nghiên cứu AWS Cloud cũng như tham gia nhiều hoạt động của cộng đồng nhằm cập nhật kiến thức và mở rộng kinh nghiệm.
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+---
+
+### Bài Học Rút Ra
+
+- Docker giúp triển khai ứng dụng nhanh chóng và nhất quán giữa các môi trường.
+- AWS cung cấp nhiều dịch vụ mạnh mẽ để xây dựng các hệ thống bảo mật và có khả năng mở rộng.
+- Kỹ năng làm việc nhóm và giao tiếp hiệu quả đóng vai trò quan trọng trong mọi dự án.
+- Việc học tập liên tục và chủ động tìm hiểu công nghệ mới là chìa khóa để phát triển trong lĩnh vực CNTT.
+
+---
+
+### Một Số Hình Ảnh Khi Tham Gia Sự Kiện
+
+![Sự kiện](/images/4-Events/event1/event-topics.png)
+
+
+
+> Nhìn chung, sự kiện không chỉ giúp mình mở rộng kiến thức về AWS và các công nghệ hiện đại mà còn mang đến nhiều kinh nghiệm thực tế và định hướng nghề nghiệp hữu ích. Đây là một hoạt động ý nghĩa, giúp mình có thêm động lực để tiếp tục học tập, nghiên cứu và áp dụng các công nghệ AWS vào những dự án trong tương lai.

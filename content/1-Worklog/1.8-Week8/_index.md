@@ -1,57 +1,33 @@
 ---
 title: "Week 8 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-07-26
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Weekly Objectives:
 
-### Week 8 Objectives:
+* Deploy the trained XGBoost model to Amazon SageMaker Endpoint for real-time inference.
+* Develop and validate prediction services using Amazon SageMaker Runtime APIs.
+* Configure monitoring and notification services with Amazon CloudWatch and Amazon SNS.
+* Perform end-to-end system testing and complete the project documentation.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks Implemented This Week:
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Tasks | Start Date | End Date | References |
+| :--- | :--- | :--- | :--- | :--- |
+| Mon | - **Model Deployment:**<br>&emsp; + Create a SageMaker Model using the trained XGBoost model artifact stored in Amazon S3.<br>&emsp; + Configure the Endpoint Configuration, including the inference instance type and deployment settings.<br>&emsp; + Deploy the model as a SageMaker Endpoint for real-time prediction. | 20/07/2026 | 20/07/2026 | <https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html> |
+| Tue | - **Endpoint Validation:**<br>&emsp; + Test the deployed endpoint using Amazon SageMaker Studio and Runtime APIs.<br>&emsp; + Send sample SCADA sensor data for inference.<br>&emsp; + Verify the prediction responses and endpoint availability. | 21/07/2026 | 21/07/2026 | <https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-test-endpoints.html> |
+| Wed | - **Monitoring Configuration:**<br>&emsp; + Monitor endpoint metrics using Amazon CloudWatch.<br>&emsp; + Review endpoint logs generated during prediction requests.<br>&emsp; + Verify endpoint performance, latency, and invocation statistics. | 22/07/2026 | 22/07/2026 | <https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html> |
+| Thu | - **Notification Service:**<br>&emsp; + Create an Amazon SNS Topic for alert notifications.<br>&emsp; + Subscribe an email endpoint to the notification topic.<br>&emsp; + Test email notifications to ensure successful message delivery. | 23/07/2026 | 23/07/2026 | <https://docs.aws.amazon.com/sns/latest/dg/welcome.html> |
+| Fri | - **Final Integration & Documentation:**<br>&emsp; + Perform end-to-end testing of the complete SCADA Fault Prediction Platform.<br>&emsp; + Clean up unnecessary AWS resources to reduce operational costs.<br>&emsp; + Complete the workshop documentation, internship report, and project presentation materials. | 24/07/2026 | 24/07/2026 | |
 
+### Results Achieved in Week 8:
 
-### Week 8 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully deployed the trained XGBoost model as an Amazon SageMaker Endpoint, enabling real-time fault prediction through HTTPS requests.
+* Validated the prediction workflow by invoking the endpoint with sample SCADA sensor data and confirming accurate inference results.
+* Configured Amazon CloudWatch to monitor endpoint performance and reviewed logs to ensure stable model execution.
+* Successfully integrated Amazon SNS with CloudWatch to provide automated email notifications for monitoring events.
+* Completed end-to-end system testing, confirming that the entire machine learning workflow—from data processing and model deployment to prediction and monitoring—operated correctly on AWS.
+* Finalized the workshop documentation, internship report, and presentation materials, completing the SCADA Fault Prediction Platform project.

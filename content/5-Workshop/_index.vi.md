@@ -1,33 +1,32 @@
 ---
 title: "Workshop"
-date: 2024-01-01
+date: 2024-07-22
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+# SCADA Fault Prediction Platform sử dụng Amazon SageMaker
 
 #### Tổng quan
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+Amazon SageMaker là dịch vụ Machine Learning được quản lý hoàn toàn trên AWS, giúp xây dựng, huấn luyện, triển khai và giám sát mô hình học máy một cách nhanh chóng mà không cần quản lý hạ tầng phức tạp. Kết hợp với các dịch vụ như Amazon S3, AWS Lambda, Amazon API Gateway, Amazon CloudWatch và Amazon SNS, SageMaker cho phép xây dựng một quy trình MLOps hoàn chỉnh từ xử lý dữ liệu đến triển khai mô hình trong môi trường thực tế.
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+Trong workshop này, bạn sẽ xây dựng một hệ thống dự đoán lỗi thiết bị công nghiệp dựa trên dữ liệu SCADA sử dụng bộ dữ liệu công khai **SKAB (Skoltech Anomaly Benchmark)**. Bạn sẽ lần lượt tải dữ liệu lên Amazon S3, tiền xử lý dữ liệu bằng SageMaker Processing, huấn luyện mô hình XGBoost, triển khai mô hình dưới dạng SageMaker Endpoint, thực hiện dự đoán thời gian thực và giám sát hệ thống bằng Amazon CloudWatch và Amazon SNS.
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+Workshop giúp người học hiểu toàn bộ quy trình triển khai một mô hình Machine Learning trên nền tảng AWS theo hướng MLOps, từ chuẩn bị dữ liệu đến triển khai và giám sát mô hình trong môi trường sản xuất.
 
 #### Nội dung
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+1. [Tổng quan](5.1-Overview/)
+2. [Điều kiện tiên quyết](5.2-Prerequisites/)
+3. [Tải bộ dữ liệu lên Amazon S3](5.3-Upload-S3/)
+4. [Tiền xử lý dữ liệu bằng SageMaker](5.4-Processing/)
+5. [Huấn luyện mô hình XGBoost](5.5-Training/)
+6. [Triển khai SageMaker Endpoint](5.6-Deployment/)
+7. [Thực hiện dự đoán với Endpoint](5.7-Invoke/)
+8. [Giám sát Endpoint bằng CloudWatch](5.8-CloudWatch/)
+9. [Tạo thông báo bằng Amazon SNS (Nâng cao)](5.9-SNS/)
+10. [Dọn dẹp tài nguyên](5.10-Cleanup/)

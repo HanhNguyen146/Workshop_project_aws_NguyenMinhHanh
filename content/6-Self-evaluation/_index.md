@@ -6,34 +6,38 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my internship, I had the opportunity to apply the knowledge acquired at university to a real-world project by developing the **SCADA Fault Prediction Platform**, an AWS SageMaker-based intelligent predictive maintenance solution.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+Throughout the internship, I participated in the complete development lifecycle of the project, including data preprocessing, feature engineering, machine learning model development, model deployment on Amazon SageMaker, endpoint monitoring with Amazon CloudWatch, notification services using Amazon SNS, and technical documentation. These tasks allowed me to strengthen both my technical knowledge and practical engineering skills while becoming more familiar with cloud-based machine learning workflows.
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+Besides improving my technical abilities in Python, machine learning, and AWS cloud services, I also developed soft skills such as teamwork, communication, problem-solving, time management, documentation writing, and presentation skills. I always completed assigned tasks on schedule, actively learned new technologies, accepted feedback from mentors, and continuously improved my work throughout the internship.
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+To objectively evaluate my internship performance, I conducted the following self-assessment.
 
-### Needs Improvement
+| No. | Criteria | Description | Good | Fair | Average |
+| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | :--: | :--: | :-----: |
+| 1 | **Professional knowledge & skills** | Understanding technical concepts and applying them to develop the SCADA Fault Prediction Platform | ✅ | ☐ | ☐ |
+| 2 | **Ability to learn** | Quickly learning new AWS services, machine learning concepts, and development tools | ✅ | ☐ | ☐ |
+| 3 | **Proactiveness** | Actively researching documentation and solving technical issues independently | ✅ | ☐ | ☐ |
+| 4 | **Sense of responsibility** | Completing assigned tasks on time while maintaining work quality | ✅ | ☐ | ☐ |
+| 5 | **Discipline** | Following internship schedules, project milestones, and organizational regulations | ✅ | ☐ | ☐ |
+| 6 | **Progressive mindset** | Accepting feedback and continuously improving technical and professional skills | ✅ | ☐ | ☐ |
+| 7 | **Communication** | Reporting progress clearly and communicating effectively with mentors and teammates | ☐ | ✅ | ☐ |
+| 8 | **Teamwork** | Collaborating with teammates throughout project development and documentation | ✅ | ☐ | ☐ |
+| 9 | **Professional conduct** | Demonstrating professionalism, responsibility, and respect in the working environment | ✅ | ☐ | ☐ |
+| 10 | **Problem-solving skills** | Identifying issues and proposing effective technical solutions during implementation | ✅ | ☐ | ☐ |
+| 11 | **Contribution to project/team** | Contributing to the workshop documentation, deployment process, and overall project completion | ✅ | ☐ | ☐ |
+| 12 | **Overall** | Overall evaluation of the internship period | ✅ | ☐ | ☐ |
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+## Areas for Improvement
+
+Although I achieved most of the internship objectives, there are still several aspects that I would like to improve in the future:
+
+- Gain deeper knowledge of advanced MLOps practices, including CI/CD pipelines, automated model retraining, and model version management.
+- Improve experience with large-scale AWS architectures and production-level cloud deployments.
+- Strengthen presentation and technical communication skills when explaining complex systems to different audiences.
+- Continue improving problem-solving abilities when working with large datasets and distributed cloud services.
+- Expand knowledge of industrial AI applications and predictive maintenance techniques beyond the scope of this project.
+
+Overall, this internship provided valuable practical experience in cloud computing, machine learning, and software engineering. It also strengthened my confidence in applying academic knowledge to real-world projects and prepared me for future careers in Artificial Intelligence, Machine Learning, and Cloud Engineering.

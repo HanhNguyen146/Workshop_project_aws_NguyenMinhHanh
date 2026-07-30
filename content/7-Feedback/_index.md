@@ -6,42 +6,59 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
+During my internship in the **First Cloud AI Journey (FCAJ)** program, I had the opportunity to work on a practical cloud-based machine learning project while receiving guidance from mentors and interacting with other participants. The internship not only strengthened my technical knowledge but also helped me develop professional skills and gain valuable experience for my future career.
 
-### Overall Evaluation
+## Overall Evaluation
 
-**1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+### 1. Learning Environment
 
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+The learning environment was friendly, professional, and highly supportive. The program provided clear learning materials, practical workshops, and opportunities to apply theoretical knowledge to real-world scenarios. This allowed me to gradually build confidence in using AWS services and machine learning technologies.
 
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+### 2. Mentor Support
 
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+The mentors were enthusiastic and always willing to answer questions whenever difficulties arose. Instead of simply providing solutions, they encouraged independent thinking and guided me toward finding appropriate approaches, which significantly improved my problem-solving ability.
 
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
+### 3. Project Experience
 
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+The internship project gave me hands-on experience in developing an end-to-end machine learning solution using Amazon SageMaker and related AWS services. Through the SCADA Fault Prediction Platform, I gained a better understanding of the complete machine learning workflow, from data preprocessing and model training to deployment and system monitoring.
 
----
+### 4. Knowledge and Skill Development
 
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+Throughout the internship, I improved my knowledge in several areas, including:
+
+- Amazon SageMaker and AWS cloud services.
+- Machine learning model development and deployment.
+- Cloud-based system architecture.
+- Technical documentation and workshop development.
+- Teamwork, communication, and time management.
+
+### 5. Program Organization
+
+The internship schedule and learning roadmap were well organized, making it easy to follow each development stage. Regular workshops, sharing sessions, and technical events also provided valuable opportunities to learn from mentors and other participants.
 
 ---
 
-### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+# Personal Reflection
+
+### Most Valuable Experience
+
+The most valuable experience was having the opportunity to build and deploy a complete machine learning application on AWS instead of only developing models locally. This helped me better understand real-world engineering workflows and cloud deployment practices.
+
+### Suggestions for Improvement
+
+Although the program was well organized, I believe it could be further improved by:
+
+- Providing more advanced workshops on MLOps and production deployment.
+- Organizing additional technical sharing sessions from previous internship participants.
+- Including more collaborative mini-projects to strengthen teamwork experience.
+
+### Recommendation
+
+I would definitely recommend the First Cloud AI Journey program to other students who are interested in Cloud Computing, Artificial Intelligence, and Machine Learning. The program provides valuable practical experience, a structured learning roadmap, and an excellent opportunity to apply academic knowledge to real-world projects.
+
+---
+
+# Final Thoughts
+
+Overall, the internship was a meaningful learning experience that allowed me to improve both technical expertise and professional skills. It also strengthened my interest in pursuing a career in Cloud Computing and Artificial Intelligence. I sincerely appreciate the support from the mentors and the FCAJ team throughout the internship and look forward to applying the knowledge gained in future projects.

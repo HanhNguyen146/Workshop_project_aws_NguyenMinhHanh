@@ -1,44 +1,65 @@
 ---
-title: "Chia sẻ, đóng góp ý kiến"
+title: "Chia sẻ và phản hồi"
 date: 2024-01-01
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
-
-### Đánh giá chung
-
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
-
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
-
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
-
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
-
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
-
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
 
 
-### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
 
+Sau quá trình tham gia chương trình **First Cloud AI Journey (FCAJ)**, tôi đã có cơ hội tiếp cận với môi trường học tập và thực hành chuyên nghiệp, đồng thời được tham gia phát triển một dự án thực tế về **SCADA Fault Prediction Platform** trên nền tảng Amazon Web Services (AWS). Đây là khoảng thời gian giúp tôi không chỉ củng cố kiến thức chuyên môn mà còn phát triển nhiều kỹ năng cần thiết cho công việc trong tương lai.
 
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+## Đánh giá chung
+
+### 1. Môi trường học tập và làm việc
+
+Chương trình mang đến một môi trường học tập thân thiện, chuyên nghiệp và luôn khuyến khích tinh thần tự học. Các nội dung được xây dựng theo lộ trình rõ ràng, từ kiến thức cơ bản đến các bài thực hành thực tế, giúp tôi từng bước làm quen với các dịch vụ AWS và quy trình phát triển một hệ thống Machine Learning hoàn chỉnh.
+
+### 2. Sự hỗ trợ từ Mentor
+
+Các Mentor luôn nhiệt tình hướng dẫn và sẵn sàng giải đáp những khó khăn trong quá trình thực hiện dự án. Thay vì đưa ra lời giải ngay lập tức, Mentor thường định hướng cách tiếp cận và khuyến khích tôi tự tìm hiểu, từ đó giúp tôi rèn luyện khả năng tư duy và giải quyết vấn đề.
+
+### 3. Trải nghiệm thực hiện dự án
+
+Được tham gia xây dựng hệ thống **SCADA Fault Prediction Platform** là một trải nghiệm rất ý nghĩa. Tôi có cơ hội thực hành toàn bộ quy trình phát triển một dự án Machine Learning trên nền tảng AWS, từ xử lý dữ liệu, huấn luyện mô hình, triển khai Amazon SageMaker Endpoint đến giám sát hệ thống bằng Amazon CloudWatch và Amazon SNS.
+
+### 4. Kiến thức và kỹ năng đạt được
+
+Sau thời gian thực tập, tôi đã nâng cao được nhiều kiến thức và kỹ năng như:
+
+- Hiểu rõ hơn về các dịch vụ AWS, đặc biệt là Amazon SageMaker, Amazon S3, Amazon CloudWatch và Amazon SNS.
+- Nắm được quy trình triển khai một mô hình Machine Learning trên nền tảng Cloud.
+- Cải thiện kỹ năng lập trình Python và xử lý dữ liệu.
+- Rèn luyện kỹ năng viết tài liệu kỹ thuật và xây dựng Workshop.
+- Phát triển kỹ năng làm việc nhóm, giao tiếp, quản lý thời gian và tự nghiên cứu tài liệu.
+
+### 5. Hoạt động đào tạo và chia sẻ
+
+Bên cạnh các nội dung chuyên môn, chương trình còn tổ chức nhiều buổi Workshop và Seminar chia sẻ kinh nghiệm từ Mentor cũng như các anh chị đã tham gia các dự án và cuộc thi công nghệ. Những buổi chia sẻ này giúp tôi có thêm góc nhìn thực tế về quá trình phát triển sản phẩm, làm việc nhóm và định hướng nghề nghiệp trong lĩnh vực Cloud Computing và Trí tuệ nhân tạo.
+
+---
+
+# Cảm nhận cá nhân
+
+## Điều tôi hài lòng nhất
+
+Điều tôi hài lòng nhất là được trực tiếp xây dựng và triển khai một hệ thống Machine Learning hoàn chỉnh trên AWS thay vì chỉ dừng lại ở việc huấn luyện mô hình trên máy tính cá nhân. Điều này giúp tôi hiểu rõ hơn về quy trình triển khai thực tế cũng như cách các dịch vụ AWS được kết hợp để xây dựng một hệ thống hoàn chỉnh.
+
+## Đề xuất cải thiện
+
+Để chương trình ngày càng hoàn thiện hơn, theo tôi có thể xem xét:
+
+- Tổ chức thêm các buổi chia sẻ chuyên sâu về MLOps và triển khai hệ thống trong môi trường Production.
+- Tăng cường các buổi chia sẻ kinh nghiệm từ các khóa thực tập trước hoặc các đội thi Hackathon.
+- Tổ chức thêm các dự án nhóm nhỏ để học viên có nhiều cơ hội rèn luyện kỹ năng làm việc nhóm.
+
+## Có sẵn sàng giới thiệu chương trình cho người khác không?
+
+Tôi sẵn sàng giới thiệu chương trình **First Cloud AI Journey** cho các bạn sinh viên quan tâm đến Cloud Computing, Machine Learning và Trí tuệ nhân tạo. Chương trình có lộ trình học tập rõ ràng, nhiều nội dung thực hành và tạo điều kiện để học viên áp dụng kiến thức vào các dự án thực tế.
+
+---
+
+# Kết luận
+
+Kỳ thực tập là một trải nghiệm học tập vô cùng ý nghĩa đối với tôi. Thông qua chương trình, tôi không chỉ tích lũy thêm kiến thức chuyên môn về AWS và Machine Learning mà còn phát triển nhiều kỹ năng mềm cần thiết trong môi trường làm việc chuyên nghiệp. Tôi xin chân thành cảm ơn các Mentor cùng đội ngũ **First Cloud AI Journey** đã luôn hỗ trợ và tạo điều kiện để tôi hoàn thành dự án cũng như có thêm nhiều kinh nghiệm quý báu cho định hướng nghề nghiệp trong tương lai.
