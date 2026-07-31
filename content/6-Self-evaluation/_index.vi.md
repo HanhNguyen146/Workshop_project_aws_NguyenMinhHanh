@@ -6,30 +6,23 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Viet Nam** từ **01/06/2026** đến **24/07/2026**, em đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức MLOps đã được trang bị tại trường vào môi trường làm việc thực tế. 
-Em đã tham gia trực tiếp vào **giai đoạn Tiền xử lý dữ liệu (Data Preprocessing) và Kiểm thử dữ liệu (Data Validation) phát hiện lỗi SCADA bằng thuật toán XGBoost trên nền tảng AWS SageMaker**. Qua dự án này, em đã cải thiện đáng kể các kỹ năng **lập trình Python, xử lý dữ liệu nhiễu và áp dụng module data_validation trực tiếp vào quá trình xử lý và viết tài liệu kỹ thuật**. 
+Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Viet Nam** từ **01/06/2026** đến **31/07/2026**, em đã có cơ hội ứng dụng trực tiếp kiến thức MLOps vào môi trường làm việc thực tế.
 
-Về tác phong, em luôn cố gắng hoàn thành tốt nhiệm vụ, chủ động nghiên cứu các tài liệu từ AWS, và tích cực trao đổi với các thành viên trong nhóm để đảm bảo mô hình được bàn giao đúng tiêu chuẩn, chuẩn bị tốt nhất cho giai đoạn triển khai CI/CD.
+Em đảm nhận vai trò chính trong **giai đoạn Kiểm định dữ liệu (Data Validation) và Tiền xử lý (Data Preprocessing)** cho hệ thống phát hiện lỗi SCADA trên nền tảng đám mây **AWS SageMaker**. Qua dự án, em đã rèn luyện kỹ năng xử lý dữ liệu nhiễu quy mô lớn, tự động hóa quy trình với Python và am hiểu sâu hơn về kiến trúc Serverless/Managed Services.
 
-Để phản ánh một cách khách quan quá trình thực tập, em xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+Nhìn lại quá trình làm việc, em xin tự đánh giá các khía cạnh của bản thân như sau:
 
-| STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | --- | --- | ---------- |
-| 1   | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc | ✅   | ☐   | ☐          |
-| 2   | **Khả năng học hỏi**                | Tiếp thu kiến thức mới, học hỏi nhanh                                                            | ☐   | ✅   | ☐          |
-| 3   | **Chủ động**                        | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn                                                  | ✅   | ☐   | ☐          |
-| 4   | **Tinh thần trách nhiệm**           | Hoàn thành công việc đúng hạn, đảm bảo chất lượng                                                | ✅   | ☐   | ☐          |
-| 5   | **Kỷ luật**                         | Tuân thủ giờ giấc, nội quy, quy trình làm việc                                                   | ☐      | ✅   | ☐       |
-| 6   | **Tính cầu tiến**                   | Sẵn sàng nhận feedback và cải thiện bản thân                                                     | ☐   | ✅   | ☐          |
-| 7   | **Giao tiếp**                       | Trình bày ý tưởng, báo cáo công việc rõ ràng                                                     | ☐   | ✅   | ☐          |
-| 8   | **Hợp tác nhóm**                    | Làm việc hiệu quả với đồng nghiệp, tham gia nhóm                                                 | ✅   | ☐   | ☐          |
-| 9   | **Ứng xử chuyên nghiệp**            | Tôn trọng đồng nghiệp, đối tác, môi trường làm việc                                              | ✅   | ☐   | ☐          |
-| 10  | **Tư duy giải quyết vấn đề**        | Nhận diện vấn đề, đề xuất giải pháp, sáng tạo                                                    | ☐   | ✅   | ☐          |
-| 11  | **Đóng góp vào dự án/tổ chức**      | Hiệu quả công việc, sáng kiến cải tiến, ghi nhận từ team                                         | ✅   | ☐   | ☐          |
-| 12  | **Tổng thể**                        | Đánh giá chung về toàn bộ quá trình thực tập                                                     | ✅   | ☐   | ☐          |
+| STT | Tiêu chí                 | Mô tả                                                                                     | Tốt | Khá | Trung bình |
+| --- | ------------------------ | ----------------------------------------------------------------------------------------- | --- | --- | ---------- |
+| 1   | **Kiến thức chuyên môn** | Hiểu biết về ngành, khả năng áp dụng kỹ thuật vào giải quyết bài toán thực tế             | ✅  | ☐   | ☐          |
+| 2   | **Khả năng học hỏi**     | Nắm bắt nhanh các dịch vụ mới của AWS (SageMaker, S3, CloudWatch)                         | ☐   | ✅  | ☐          |
+| 3   | **Tính chủ động**        | Tự tìm tòi tài liệu, đề xuất phương án tối ưu làm sạch dữ liệu mà không chờ chỉ dẫn       | ✅  | ☐   | ☐          |
+| 4   | **Trách nhiệm**          | Luôn đảm bảo hoàn thành module đúng tiến độ để ghép nối chuẩn xác với team                | ✅  | ☐   | ☐          |
+| 5   | **Kỷ luật**              | Tuân thủ quy trình phát triển phần mềm, quản lý chi phí tài nguyên AWS hợp lý             | ☐   | ✅  | ☐          |
+| 6   | **Hợp tác nhóm**         | Phối hợp nhịp nhàng, hiệu quả với các thành viên khác khi xử lý các lỗi tích hợp hệ thống | ✅  | ☐   | ☐          |
 
 ### Cần cải thiện
 
-* **Kỷ luật tổ chức:** Cần nâng cao tính kỷ luật, tự giác tuân thủ nghiêm ngặt giờ giấc và các quy định của tổ chức. Đồng thời, cần bám sát hơn nữa các quy trình chuẩn trong việc quản lý, dọn dẹp tài nguyên đám mây (AWS) nhằm tối ưu chi phí cho dự án.
-* **Tư duy giải quyết vấn đề:** Cần rèn luyện tư duy phân tích sâu hơn khi đối mặt với các lỗi phát sinh trong quá trình xử lý và làm sạch dữ liệu hoặc tích hợp hệ thống, thay vì chỉ tập trung vào các giải pháp xử lý bề ngọn tạm thời.
-* **Kỹ năng giao tiếp:** Cần trau dồi cách diễn đạt ý tưởng kỹ thuật một cách súc tích, dễ hiểu hơn trong giao tiếp hàng ngày. Bên cạnh đó, cần linh hoạt hơn trong xử lý tình huống, chủ động đặt câu hỏi và cởi mở đón nhận phản hồi khi phối hợp liên phòng ban.
+- **Quản lý tài nguyên Đám mây:** Cần nâng cao ý thức dọn dẹp (cleanup) các endpoint và instance sau khi test để tối ưu chi phí (Cloud Billing) triệt để hơn, tránh phát sinh phí ngoài ý muốn.
+- **Tư duy kiến trúc hệ thống:** Cần mở rộng góc nhìn bao quát về toàn bộ vòng đời của ứng dụng MLOps thay vì đôi lúc chỉ tập trung cục bộ vào phần Data Engineering mình đang phụ trách.
+- **Kỹ năng trình bày:** Cần trau dồi cách diễn đạt các vấn đề kỹ thuật phức tạp thành các khái niệm đơn giản, dễ hiểu để quá trình làm việc liên phòng ban diễn ra trơn tru hơn.

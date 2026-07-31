@@ -6,8 +6,10 @@ chapter: false
 pre: " <b> 8. </b> "
 ---
 
-### Mã nguồn dự án
+### Kho Lưu Trữ Mã Nguồn
 
-Bạn có thể xem toàn bộ mã nguồn của dự án trên GitHub tại đường dẫn bên dưới:
+Toàn bộ quy trình MLOps, bao gồm các script tự động hóa (Data Validation, S3 Upload, SageMaker Processing) và tài liệu triển khai của dự án được lưu trữ công khai trên GitHub.
 
-[Truy cập GitHub Repository](https://github.com/DuyChuong3011/SCADA-Fault-Prediction)
+Bạn có thể xem chi tiết kiến trúc, mã nguồn huấn luyện và đóng góp cho dự án phát hiện lỗi SCADA tại:
+
+👉 [Truy cập GitHub Repository của dự án](https://github.com/DuyChuong3011/SCADA-Fault-Prediction)

@@ -30,6 +30,7 @@ Trong cấu trúc thư mục dự án trên máy cục bộ của bạn, hãy đ
 Trước khi đẩy dữ liệu thô lên Data Lake (S3), một nguyên tắc cực kỳ quan trọng trong MLOps là phải đảm bảo chất lượng dữ liệu đầu vào (Input Data). Nếu "dữ liệu rác" bị đẩy lên mây, nó sẽ gây lãng phí tài nguyên tính toán của SageMaker và làm hỏng toàn bộ pipeline phía sau.
 
 Dự án sử dụng module `src/data_validation.py` để tự động kiểm thử cục bộ các điều kiện nghiêm ngặt:
+
 1. **Required Columns:** Kiểm tra tập dữ liệu có chứa đầy đủ các cột bắt buộc (ActivePower, Wind Speed, Wind Direction, Theoretical_Power_Curve, timestamp) hay không.
 2. **Row Count:** Đảm bảo số lượng mẫu đủ lớn (tối thiểu 100 dòng) để có ý nghĩa thống kê.
 3. **Missing Values:** Cảnh báo nếu tỷ lệ dữ liệu bị thiếu vượt mức cho phép (>30%) hoặc đánh lỗi nếu vượt mức nghiêm trọng (>50%).
@@ -68,7 +69,7 @@ Mở Terminal tại thư mục gốc của dự án và chạy kịch bản đ�
  Scripts : s3://amznce23/T1_AD/scripts/
 ```
 
-*(Lưu ý: Tên bucket `amznce23` và tiền tố `T1_AD` được cấu hình sẵn trong file `setupS3.py` của dự án, bạn có thể điều chỉnh lại thông số này theo bucket của riêng mình nếu cần thiết).*
+_(Lưu ý: Tên bucket `amznce23` và tiền tố `T1_AD` được cấu hình sẵn trong file `setupS3.py` của dự án, bạn có thể điều chỉnh lại thông số này theo bucket của riêng mình nếu cần thiết)._
 
 ---
 

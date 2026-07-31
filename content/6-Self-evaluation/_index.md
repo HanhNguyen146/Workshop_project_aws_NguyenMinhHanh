@@ -6,30 +6,23 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship at **Amazon Web Services Vietnam Co., Ltd.** from **June 1, 2026** to **July 24, 2026**, I had the opportunity to learn, practice, and apply the MLOps knowledge equipped at school into a real working environment. 
-I directly participated in the **Data Preprocessing and Data Validation phase to detect SCADA anomalies using the XGBoost algorithm on the AWS SageMaker platform**. Through this project, I have significantly improved my skills in **Python programming, handling noisy data and applying data_validation module directly to the process, and writing technical documentation**. 
+During my internship at **Amazon Web Services Vietnam Co., Ltd.** from **June 1, 2026** to **July 31, 2026**, I had the valuable opportunity to directly apply MLOps knowledge in a practical working environment.
 
-Regarding my work attitude, I always try to complete tasks well, proactively research documentation from AWS, and actively communicate with team members to ensure the model is delivered to standard, best prepared for the CI/CD deployment phase.
+I took on the primary role in the **Data Validation and Data Preprocessing** phase for the SCADA fault prediction system on the **AWS SageMaker** cloud platform. Through this project, I significantly improved my skills in handling large-scale noisy data, automating pipelines with Python, and gaining a deeper understanding of Serverless/Managed Services architecture.
 
-To objectively reflect the internship process, I would like to self-evaluate based on the criteria below:
+Looking back at the work process, I would like to self-evaluate my skills based on the following criteria:
 
 | No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | --- | --- | ---------- |
-| 1   | **Knowledge and professional skills** | Understanding of the industry, applying knowledge to practice, tool usage skills, work quality | ✅   | ☐   | ☐          |
-| 2   | **Learning ability**                | Acquiring new knowledge, learning quickly                                                            | ☐   | ✅   | ☐          |
-| 3   | **Proactiveness**                        | Self-researching, taking tasks without waiting for instructions                                                  | ✅   | ☐   | ☐          |
-| 4   | **Sense of responsibility**           | Completing work on time, ensuring quality                                                | ✅   | ☐   | ☐          |
-| 5   | **Discipline**                         | Complying with time, rules, and working procedures                                                   | ☐      | ✅   | ☐       |
-| 6   | **Progressive attitude**                   | Willing to receive feedback and improve oneself                                                     | ☐   | ✅   | ☐          |
-| 7   | **Communication**                       | Presenting ideas, reporting work clearly                                                     | ☐   | ✅   | ☐          |
-| 8   | **Team collaboration**                    | Working effectively with colleagues, participating in groups                                                 | ✅   | ☐   | ☐          |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, working environment                                              | ✅   | ☐   | ☐          |
-| 10  | **Problem-solving mindset**        | Identifying problems, proposing solutions, being creative                                                    | ☐   | ✅   | ☐          |
-| 11  | **Contribution to project/organization**      | Work efficiency, improvement initiatives, recognition from the team                                         | ✅   | ☐   | ☐          |
-| 12  | **Overall**                        | General assessment of the entire internship process                                                     | ✅   | ☐   | ☐          |
+| 1   | **Professional Knowledge**            | Understanding of the industry, ability to apply techniques to real-world problems            | ✅   | ☐   | ☐          |
+| 2   | **Learning Ability**                | Quickly grasping new AWS services (SageMaker, S3, CloudWatch)                                          | ☐   | ✅   | ☐          |
+| 3   | **Proactiveness**                   | Self-researching documentation, proposing data cleaning methods independently                 | ✅   | ☐   | ☐          |
+| 4   | **Responsibility**                     | Always ensuring modules are completed on schedule for accurate team integration                     | ✅   | ☐   | ☐          |
+| 5   | **Discipline**                         | Complying with software development procedures, managing AWS resource costs reasonably                             | ☐   | ✅   | ☐          |
+| 6   | **Team Collaboration**                    | Coordinating effectively and smoothly with other members when resolving system integration errors                    | ✅   | ☐   | ☐          |
 
 ### Areas for Improvement
 
-* **Organizational Discipline:** Need to improve discipline, strictly adhere to time and organizational regulations. At the same time, need to adhere more closely to standard procedures in managing and cleaning up cloud resources (AWS) to optimize project costs.
-* **Problem-solving mindset:** Need to practice deeper analytical thinking when facing errors that arise during data processing and cleaning or system integration, instead of just focusing on temporary surface-level solutions.
-* **Communication skills:** Need to cultivate the ability to express technical ideas more concisely and understandably in daily communication. In addition, need to be more flexible in handling situations, proactively asking questions, and being open to receiving feedback when coordinating across departments.
+* **Cloud Resource Management:** Need to heighten awareness of cleaning up endpoints and instances after testing to optimize costs (Cloud Billing) more thoroughly and avoid unexpected charges.
+* **System Architecture Mindset:** Need to cultivate a more comprehensive view of the entire MLOps application lifecycle rather than sometimes just focusing locally on the assigned Data Engineering part.
+* **Presentation Skills:** Need to practice translating complex technical issues into simpler, more concise concepts so that cross-departmental collaboration runs more smoothly.

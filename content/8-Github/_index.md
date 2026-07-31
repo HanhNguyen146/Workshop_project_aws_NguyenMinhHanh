@@ -6,8 +6,10 @@ chapter: false
 pre: " <b> 8. </b> "
 ---
 
-### Project Source Code
+### Source Code Repository
 
-You can view the full source code and contribute to the project on GitHub:
+The entire MLOps process, including automation scripts (Data Validation, S3 Upload, SageMaker Processing) and deployment documentation for the project, is publicly hosted on GitHub.
 
-[Link to GitHub Repository](https://github.com/DuyChuong3011/SCADA-Fault-Prediction)
+You can view the detailed architecture, training source code, and contribute to the SCADA fault prediction project here:
+
+👉 [Access the Project's GitHub Repository](https://github.com/DuyChuong3011/SCADA-Fault-Prediction)
