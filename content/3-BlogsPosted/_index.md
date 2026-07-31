@@ -14,5 +14,9 @@ This blog introduces the newly added session policies feature in Amazon EKS Pod 
 ### [Blog 2 - AWS Service Prioritization Strategy for AI / MLOPS engineer](3.2-Blog2/)
 This article analyzes and proposes a strategic approach to learning AWS services for AI/MLOps engineers. The content is logically structured into 4 architectural layers: Storage & Security, MLOps & Training, Deployment, and Monitoring. It helps learners transition from using local environments to building standardized MLOps workflows on the cloud.
 
+**Author:** Nguyen Minh Hanh
+
 ### [Blog 3 - Building an End-to-End Machine Learning Pipeline with Amazon SageMaker](3.3-Blog3/)
 This blog introduces the process of building a complete Machine Learning pipeline on Amazon SageMaker, from data storage on Amazon S3, data preprocessing, model training, and Endpoint deployment to monitoring with Amazon CloudWatch. The article provides an overview of how AWS services coordinate to deploy and operate a Machine Learning system in a Production environment.
+
+**Author:** Tran Nhu Nhat Hoang
