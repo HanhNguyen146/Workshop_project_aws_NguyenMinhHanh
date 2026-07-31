@@ -6,12 +6,27 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-Trong thời gian thực tập, em đã có cơ hội tham gia ba sự kiện do AWS tổ chức: AWS Study Group Community Sharing Session, Cloud Architect - Event GameDay và FCAJ-Agentic AI BUILD WEEK. Chúng mang lại cho em nhiều kiến thức thực tiễn về điện toán đám mây (Cloud Computing), trí tuệ nhân tạo (Agentic AI) cũng như tư duy thiết kế kiến trúc hệ thống thực tế. Nhờ việc lắng nghe chia sẻ từ các chuyên gia, quan sát các phần tranh tài và giao lưu cùng các anh chị trong ngành, em không chỉ mở rộng góc nhìn về lộ trình phát triển nghề nghiệp mà còn củng cố nền tảng chuyên môn và tinh thần học hỏi từ thực tế.
+Trong thời gian thực tập, em đã có cơ hội tham gia chuỗi bốn sự kiện do cộng đồng AWS tổ chức. Chuỗi sự kiện này mang lại cho em nhiều kiến thức thực tiễn về điện toán đám mây (Cloud Computing), bảo mật, DevOps, trí tuệ nhân tạo (Agentic AI) cũng như những kỹ năng và kinh nghiệm thực tế quý giá trong công việc. Nhờ việc lắng nghe chia sẻ từ các chuyên gia đầu ngành và quan sát các phần tranh tài từ những đội thi xuất sắc, em không chỉ mở rộng góc nhìn về lộ trình phát triển nghề nghiệp mà còn củng cố nền tảng chuyên môn, học cách tư duy kiến trúc hệ thống và duy trì tinh thần học hỏi liên tục.
 
 ---
 
 ### [Event 1](4.1-Event1/)
-**Tên sự kiện:** AWS Study Group Community Sharing Session
+**Tên sự kiện:** AWS Community Meetup
+
+**Thời gian:** 09:00 ngày 06/06/2026
+
+**Địa điểm:** Tầng 26, Tòa nhà Bitexco Financial Tower, số 02 Hải Triều, phường Sài Gòn, Thành phố Hồ Chí Minh
+
+**Vai trò:** Người xem
+
+**Mô tả:** Buổi Meetup bao quát đa dạng chủ đề từ kỹ thuật chuyên sâu đến kỹ năng mềm, bao gồm: Ứng dụng Machine Learning vào hệ thống NIDS kết hợp AWS WAF; công nghệ Docker; hành trình từ IT Helpdesk lên Senior Sysadmin; thiết kế Multiplayer game bằng Godot và WebSockets; nghệ thuật làm việc nhóm và ứng dụng GraphRAG.
+
+**Kết quả đạt được:** Thông qua sự kiện, em nắm bắt được xu hướng công nghệ (bảo mật, container, AI), rèn luyện kỹ năng làm việc nhóm hiệu quả, đồng thời củng cố định hướng phát triển bản thân.
+
+---
+
+### [Event 2](4.2-Event2/)
+**Tên sự kiện:** Thực tế DevOps & Kiến trúc URL Shortener
 
 **Thời gian:** 09:00 ngày 13/06/2026
 
@@ -19,32 +34,29 @@ Trong thời gian thực tập, em đã có cơ hội tham gia ba sự kiện do
 
 **Vai trò:** Người xem
 
-**Mô tả:** Buổi Meetup chia sẻ về định hướng nghề nghiệp trong lĩnh vực Cloud, DevOps, AI và Data Analytics, 
-đồng thời giới thiệu những kỹ năng, kinh nghiệm thực tế và văn hóa làm việc trong doanh nghiệp.
+**Mô tả:** Sự kiện đào sâu vào thực tế công việc của một DevOps Engineer, phá vỡ nhiều lầm tưởng phổ biến. Bên cạnh đó, các chuyên gia chia sẻ kiến trúc hệ thống rút gọn URL chuẩn trên AWS, lộ trình 8 bước phát triển sự nghiệp cùng Cloud, và câu chuyện thực tế về phân tích dữ liệu tại MNCs.
 
-**Kết quả đạt được:** Thông qua sự kiện, em hiểu rõ hơn về lộ trình phát triển nghề nghiệp, củng cố kiến thức về Cloud Computing và có thêm động lực để tiếp tục học tập, phát triển các kỹ năng chuyên môn.
+**Kết quả đạt được:** Thông qua sự kiện, em hiểu rõ thực tế công việc ngành Cloud/DevOps, nắm vững nguyên lý thiết kế hệ thống tách biệt luồng tĩnh/động và kiến trúc cache-aside.
 
 ---
 
-### [Event 2](4.2-Event2/)
+### [Event 3](4.3-Event3/)
+**Tên sự kiện:** Bảo mật, Monitoring & Chứng chỉ AWS
 
-**Tên sự kiện:** Cloud Architect - Event GameDay
-
-**Thời gian:** 09:00 ngày 20/06/2026
+**Thời gian:** 09:00 ngày 11/07/2026
 
 **Địa điểm:** Tầng 26, Tòa nhà Bitexco Financial Tower, số 02 Hải Triều, phường Sài Gòn, Thành phố Hồ Chí Minh
 
 **Vai trò:** Người xem
 
-**Mô tả:** Cloud Architect là cuộc thi kiến thức được tổ chức theo hình thức đối kháng giữa các đội. Các đội lần lượt trả lời các câu hỏi về Cloud Computing và thiết kế kiến trúc hệ thống trên AWS để tích lũy điểm và giành quyền vào vòng tiếp theo.
+**Mô tả:** Trọng tâm của buổi chia sẻ hướng đến việc quản trị, bảo mật và chứng chỉ. Các diễn giả vạch ra lộ trình chinh phục chứng chỉ Cloud Practitioner; giới thiệu Frontier Agent - giải pháp bảo mật tự động bằng AI; và thảo luận về nghịch lý trong giám sát (Monitoring) khi sức khỏe server không phản ánh đúng trải nghiệm người dùng.
 
-**Kết quả đạt được:** Thông qua sự kiện, em đã củng cố kiến thức về Cloud Computing và kiến trúc hệ thống trên AWS, đồng thời rèn luyện kỹ năng tư duy, làm việc nhóm và phản xạ khi giải quyết các câu hỏi tình huống.
+**Kết quả đạt được:** Thông qua sự kiện, em lên kế hoạch ôn luyện bài bản cho chứng chỉ AWS và biết cách cấu hình cảnh báo CloudWatch/SNS hợp lý.
 
 ---
 
-### [Event 3](4.3-Event3/)
-
-**Tên sự kiện:** FCAJ-Agentic AI BUILD WEEK
+### [Event 4](4.4-Event4/)
+**Tên sự kiện:** Agentic AI Build Week & Hackathon Journey
 
 **Thời gian:** 09:00 ngày 25/07/2026
 
@@ -52,6 +64,6 @@ Trong thời gian thực tập, em đã có cơ hội tham gia ba sự kiện do
 
 **Vai trò:** Người xem
 
-**Mô tả:** Sự kiện tập trung giới thiệu và trình diễn các giải pháp Agentic AI ứng dụng các công nghệ AWS như Amazon Bedrock, SageMaker và Kinesis. Các đề tài nổi bật gồm có: ứng dụng giám sát và cảnh báo mật độ đám đông theo thời gian thực (S.H.E.P.H.E.R.D), trợ lý AI hỗ trợ Solution Architect tự động hóa thiết kế kiến trúc và ước tính chi phí, cùng hệ thống điều tra và thu thập tín hiệu tái cấu trúc doanh nghiệp (Signal Scout).
+**Mô tả:** Buổi chia sẻ đầy cảm hứng đúc kết hành trình 24 giờ của Hackathon. Giới thiệu các dự án sáng tạo như: Trợ lý AI đặt đồ ăn KFC, Nền tảng phân tích chiến lược, Trợ lý tự động hóa thiết kế AWS, Hệ thống quản lý đám đông, và Hệ thống phòng chống rửa tiền.
 
-**Kết quả đạt được:** Thông qua sự kiện, em đã củng cố kiến thức về Agentic AI và các dịch vụ đám mây của AWS, hiểu rõ hơn quy trình phát triển sản phẩm thực tế từ ý tưởng đến triển khai, đồng thời học hỏi kinh nghiệm tư duy kiến trúc hệ thống và kỹ năng làm việc nhóm từ các đội thi.
+**Kết quả đạt được:** Thông qua sự kiện, em hiểu cách phối hợp mô hình Agentic AI với AWS, học hỏi kỹ năng kiểm soát phạm vi dự án (scope) và vượt qua sự cố dưới áp lực thời gian.

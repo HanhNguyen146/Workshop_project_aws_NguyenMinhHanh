@@ -5,7 +5,6 @@ weight: 1
 chapter: false
 ---
 
-    
 # Internship Report
 
 <!-- {{% notice warning %}}
@@ -13,11 +12,12 @@ chapter: false
 {{% /notice %}} -->
 
 ### Student Information:
-&emsp; **Full Name:** Huynh Duy Chuong
 
-&emsp; **Phone Number:** 0393622941
+&emsp; **Full Name:** Nguyen Minh Hanh
 
-&emsp; **Email:** chuong.huynh2310363@hcmut.edu.vn
+&emsp; **Phone Number:** 0348401029
+
+&emsp; **Email:** hanh.nguyen20503@hcmut.edu.vn / nguyenminhhanh205@gmail.com
 
 &emsp; **University:** Ho Chi Minh City University of Technology
 
