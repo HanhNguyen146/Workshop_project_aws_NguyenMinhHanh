@@ -1,5 +1,5 @@
 ---
-title: "Blog 2"
+title: "Blog 1"
 date: 2026-07-17
 weight: 2
 chapter: false

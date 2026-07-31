@@ -1,6 +1,6 @@
 ---
 title: "Blog3"
-date: 2026-07-27
+date: 2026-07-31
 weight: 3
 chapter: false
 pre: " <b> 3.3. </b> "
@@ -34,8 +34,6 @@ Một pipeline Machine Learning điển hình bao gồm:
 Việc tự động hóa các bước này giúp tăng khả năng tái sử dụng, giảm sai sót do con người và rút ngắn thời gian triển khai mô hình.
 
 ---
-
-
 
 ## Bước 1 – Lưu trữ dữ liệu
 

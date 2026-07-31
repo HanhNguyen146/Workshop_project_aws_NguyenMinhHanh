@@ -16,10 +16,6 @@ Bài viết này phân tích và đề xuất chiến lược học tập các d
 
 Bài viết này phân tích và đề xuất chiến lược học tập các dịch vụ AWS dành cho kỹ sư AI/MLOps. Nội dung được chia thành 4 lớp kiến trúc cốt lõi: Lưu trữ & Bảo mật, MLOps, Triển khai mô hình (Serverless) và Giám sát. Qua đó, giúp người đọc chuyển dịch từ thói quen lập trình cục bộ sang xây dựng quy trình vận hành đám mây chuẩn hóa.
 
-**Tác giả:** Nguyễn Minh Hạnh
-
 ### [Blog 3 - Xây dựng Pipeline Machine Learning End-to-End với Amazon SageMaker](3.3-Blog3/)
 
 Bài viết này giới thiệu quy trình xây dựng một pipeline Machine Learning hoàn chỉnh trên Amazon SageMaker, từ việc lưu trữ dữ liệu trên Amazon S3, tiền xử lý dữ liệu, huấn luyện mô hình, triển khai Endpoint cho đến giám sát bằng Amazon CloudWatch. Bài viết giúp người đọc có cái nhìn tổng quan về cách các dịch vụ AWS phối hợp để triển khai và vận hành một hệ thống Machine Learning trong môi trường Production.
-
-**Tác giả:** Trần Như Nhật Hoàng
