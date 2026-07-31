@@ -9,10 +9,10 @@ pre: " <b> 7. </b> "
 ### Đánh giá chung
 
 **1. Môi trường làm việc & Hỗ trợ**  
-Chương trình First Cloud AI Journey (FCAJ) đã tạo ra một không gian thực hành đám mây năng động và chuyên nghiệp. Sự hướng dẫn tận tình từ các Mentor là vô giá, giúp em vượt qua nhiều khó khăn kỹ thuật khó nhằn như cấu hình quyền IAM Role cho SageMaker hay xử lý logic toán học phức tạp cho dữ liệu góc gió SCADA.
+Chương trình First Cloud AI Journey (FCAJ) đã tạo ra một không gian thực hành đám mây năng động và chuyên nghiệp. Sự hướng dẫn tận tình từ các Mentor là vô giá, giúp em vượt qua nhiều khó khăn kỹ thuật khó nhằn khi bắt đầu làm quen với các dịch vụ của AWS.
 
 **2. Sự phù hợp chuyên môn**  
-Dự án "Phát hiện dị thường SCADA bằng MLOps" hoàn toàn trùng khớp với định hướng Khoa học Dữ liệu mà em theo đuổi. Việc triển khai các thuật toán học máy từ máy tính cá nhân lên một hệ thống công nghiệp mạnh mẽ như AWS SageMaker là một bước đệm hoàn hảo giúp em hình dung rõ ràng công việc thực tế của một Kỹ sư AI.
+Dự án "Hệ thống Dự đoán Lỗi SCADA" hoàn toàn trùng khớp với định hướng Khoa học Dữ liệu mà em theo đuổi. Việc triển khai các thuật toán học máy từ máy tính cá nhân lên một hệ thống công nghiệp mạnh mẽ như AWS SageMaker là một bước đệm hoàn hảo giúp em hình dung rõ ràng công việc thực tế của một Kỹ sư AI.
 
 **3. Kỹ năng đạt được & Làm việc nhóm**  
 Em đã làm chủ được quy trình đẩy dữ liệu lên S3, viết script tiền xử lý tự động và thiết lập các kịch bản Data Validation khắt khe. Hơn thế nữa, tinh thần làm việc nhóm là điểm sáng lớn nhất; mọi người luôn sẵn sàng "brainstorm" cùng nhau mỗi khi pipeline gặp trục trặc, tạo nên một sự gắn kết tuyệt vời.
