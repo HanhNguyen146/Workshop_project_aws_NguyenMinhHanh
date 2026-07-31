@@ -1,10 +1,11 @@
 ---
-title: "Blog3"
-date: 2026-07-31
+title: "Blog 3"
+date: 2026-07-26
 weight: 3
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
+
 # Building an End-to-End Machine Learning Pipeline with Amazon SageMaker
 
 Machine learning projects involve much more than simply training a model. A production-ready solution requires a complete workflow that covers data preparation, model training, deployment, monitoring, and continuous maintenance.
@@ -13,8 +14,6 @@ Amazon SageMaker provides a fully managed platform that simplifies every stage o
 
 This article introduces the major components of an end-to-end machine learning pipeline built using Amazon SageMaker.
 
----
-
 ## What is an End-to-End Machine Learning Pipeline?
 
 An end-to-end machine learning pipeline is a sequence of automated processes that transforms raw data into a deployed prediction service.
@@ -22,7 +21,6 @@ An end-to-end machine learning pipeline is a sequence of automated processes tha
 Instead of manually performing each task, the pipeline organizes the workflow into several connected stages.
 
 A typical workflow includes:
-
 - Data collection
 - Data preprocessing
 - Model training
@@ -32,15 +30,11 @@ A typical workflow includes:
 
 Automating these stages improves reproducibility, reduces human error, and accelerates model delivery.
 
-
----
-
 ## Step 1 – Data Storage
 
 Amazon S3 acts as the central storage service for datasets, training outputs, and model artifacts.
 
 Typical objects stored in S3 include:
-
 - Raw datasets
 - Processed datasets
 - Training scripts
@@ -49,14 +43,11 @@ Typical objects stored in S3 include:
 
 Using Amazon S3 allows all pipeline components to access the same data securely and efficiently.
 
----
-
 ## Step 2 – Data Processing
 
 Before training, datasets usually require preprocessing.
 
 Typical preprocessing tasks include:
-
 - Removing missing values
 - Feature engineering
 - Data normalization
@@ -65,14 +56,11 @@ Typical preprocessing tasks include:
 
 Amazon SageMaker Processing Jobs automate these operations using managed computing resources.
 
----
-
 ## Step 3 – Model Training
 
 After preprocessing, SageMaker Training Jobs train the machine learning model.
 
 During this stage:
-
 - Training datasets are loaded from Amazon S3.
 - Hyperparameters are configured.
 - Compute instances are provisioned automatically.
@@ -80,42 +68,32 @@ During this stage:
 
 Since SageMaker manages the infrastructure automatically, developers only need to focus on model development.
 
----
-
 ## Step 4 – Model Deployment
 
 Once training is complete, the model can be deployed as an Amazon SageMaker Endpoint.
 
 The deployment process includes:
-
 - Creating a SageMaker Model
 - Creating an Endpoint Configuration
 - Deploying an Endpoint
 
 The deployed endpoint exposes a secure HTTPS API that supports real-time predictions.
-
 Applications can submit inference requests directly without managing servers.
-
----
 
 ## Step 5 – Monitoring
 
 After deployment, monitoring becomes essential.
 
 Amazon CloudWatch continuously collects:
-
 - Endpoint metrics
 - Runtime logs
 - Performance statistics
 
 CloudWatch Alarms can automatically trigger Amazon SNS notifications whenever abnormal conditions occur, helping administrators respond quickly to operational issues.
 
----
-
 ## Benefits of an End-to-End Pipeline
 
 Using Amazon SageMaker to build an end-to-end machine learning pipeline offers several advantages:
-
 - Fully managed infrastructure
 - Faster model development
 - Simplified deployment
@@ -126,14 +104,11 @@ Using Amazon SageMaker to build an end-to-end machine learning pipeline offers s
 
 These benefits enable teams to focus more on developing machine learning models instead of maintaining infrastructure.
 
----
-
 ## Application in the SCADA Fault Prediction Platform
 
 In the SCADA Fault Prediction Platform, Amazon SageMaker provides the core machine learning workflow.
 
 The pipeline includes:
-
 - Uploading SCADA datasets to Amazon S3.
 - Processing datasets using SageMaker Processing Jobs.
 - Training an XGBoost model.
@@ -144,10 +119,19 @@ The pipeline includes:
 
 This workflow creates a complete production-ready machine learning solution capable of supporting real-time fault prediction.
 
----
-
 ## Conclusion
 
-Building an end-to-end machine learning pipeline requires more than training accurate models. Data management, deployment, monitoring, and maintenance are equally important for production systems.
+Building an end-to-end machine learning pipeline requires more than training accurate models. Data management, deployment, monitoring, and maintenance are equally important for production systems. Amazon SageMaker provides an integrated platform that simplifies every stage of the machine learning lifecycle. Combined with services such as Amazon S3, CloudWatch, and Amazon SNS, it enables organizations to build scalable, reliable, and maintainable machine learning applications on AWS.
 
-Amazon SageMaker provides an integrated platform that simplifies every stage of the machine learning lifecycle. Combined with services such as Amazon S3, CloudWatch, and Amazon SNS, it enables organizations to build scalable, reliable, and maintainable machine learning applications on AWS.
+## ARTICLE LINK
+- [Building an End-to-End Machine Learning Pipeline with Amazon SageMaker](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2229980511100242)
+
+## REFERENCES
+- [Amazon SageMaker Documentation](https://docs.aws.amazon.com/sagemaker/)
+- [Amazon SageMaker Pipelines Developer Guide](https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html)
+- [Amazon SageMaker Processing Jobs](https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job.html)
+- [Amazon SageMaker Training Jobs](https://docs.aws.amazon.com/sagemaker/latest/dg/train-model.html)
+- [Amazon SageMaker Endpoints (Real-time Inference)](https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html)
+- [Amazon S3 User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/)
+- [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/)
+- [Amazon SNS Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/)
