@@ -15,11 +15,11 @@ pre: " <b> 1.2. </b> "
 
 | Thứ / Day | Công việc / Task | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 2 | - Nhận dữ liệu `T1.csv` thô từ nguồn. <br> - Khởi tạo `notebooks/01_eda_local.ipynb` để phân tích thống kê cơ bản. | 08/06/2026 | 08/06/2026 | |
-| 3 | - Trực quan hóa chuỗi thời gian (time-series) để phát hiện sự phân bố của dữ liệu. | 09/06/2026 | 09/06/2026 | |
-| 4 | - Phân tích mối tương quan giữa các biến cảm biến SCADA. | 10/06/2026 | 10/06/2026 | |
-| 5 | - Xây dựng các hàm làm sạch dữ liệu ban đầu (xóa bỏ dữ liệu rác, chuẩn hóa định dạng thời gian). | 11/06/2026 | 11/06/2026 | |
-| 6 | - **Thực hành:** Tổng hợp các vấn đề của dữ liệu và chốt phương án xử lý (Interpolation, Outlier handling). | 12/06/2026 | 12/06/2026 | |
+| 2 | - Nhận dữ liệu `T1.csv` thô từ nguồn. <br> - Khởi tạo `notebooks/01_eda_local.ipynb` để phân tích thống kê cơ bản. | 08/06/2026 | 10/06/2026 |  |
+| 3 | - Trực quan hóa chuỗi thời gian (time-series) để phát hiện sự phân bố của dữ liệu. | 09/06/2026 | 10/06/2026 |  |
+| 4 | - Phân tích mối tương quan giữa các biến cảm biến SCADA. | 10/06/2026 | 11/06/2026 |  |
+| 5 | - Xây dựng các hàm làm sạch dữ liệu ban đầu (xóa bỏ dữ liệu rác, chuẩn hóa định dạng thời gian). | 11/06/2026 | 12/06/2026 |  |
+| 6 | - **Thực hành:** Tổng hợp các vấn đề của dữ liệu và chốt phương án xử lý (Interpolation, Outlier handling). | 12/06/2026 | 12/06/2026 |  |
 
 ### Kết quả đạt được:
 

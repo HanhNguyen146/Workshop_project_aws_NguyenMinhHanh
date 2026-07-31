@@ -15,11 +15,11 @@ pre: " <b> 1.7. </b> "
 
 | Thứ / Day | Công việc / Task | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| Mon | - Understand Amazon SageMaker Feature Store service. | 13/07/2026 | 13/07/2026 | |
-| Tue | - Write script to create Feature Group for SCADA dataset. | 14/07/2026 | 14/07/2026 | |
-| Wed | - Program Data Ingestion flow (post-preprocessing) into Feature Store. | 15/07/2026 | 15/07/2026 | |
-| Thu | - Configure secure IAM access for Feature Store. | 16/07/2026 | 16/07/2026 | |
-| Fri | - **Practice:** Verify data extraction from Feature Store for ML team training. | 17/07/2026 | 17/07/2026 | |
+| Mon | - Understand Amazon SageMaker Feature Store service. | 13/07/2026 | 15/07/2026 |  |
+| Tue | - Write script to create Feature Group for SCADA dataset. | 14/07/2026 | 15/07/2026 |  |
+| Wed | - Program Data Ingestion flow (post-preprocessing) into Feature Store. | 15/07/2026 | 16/07/2026 |  |
+| Thu | - Configure secure IAM access for Feature Store. | 16/07/2026 | 17/07/2026 |  |
+| Fri | - **Practice:** Verify data extraction from Feature Store for ML team training. | 17/07/2026 | 17/07/2026 |  |
 
 ### Kết quả đạt được:
 

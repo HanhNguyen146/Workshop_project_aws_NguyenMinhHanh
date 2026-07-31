@@ -16,10 +16,10 @@ pre: " <b> 1.3. </b> "
 
 | Day | Task | Start Date | Completion Date | Reference Materials |
 | --- | ---- | ---------- | --------------- | ------------------- |
-| Mon | - Create the `src/preprocessing.py` file. <br> - Write the `load_data()` and `handle_missing_values()` functions to load and clean raw SCADA data. | 15/06/2026 | 15/06/2026 | <https://pandas.pydata.org/docs/> |
-| Tue | - Program the `src/data_validation.py` module with the `validate_data()` function to automate input data integrity checks. | 16/06/2026 | 16/06/2026 | <https://docs.python.org/3/> |
-| Wed | - Write the `data_validation.py` script to run independent testing without executing the entire pipeline. | 17/06/2026 | 17/06/2026 | <https://docs.pytest.org/> |
-| Thu | - Integrate interpolation mechanisms to handle missing time-series data (lag) and preserve valid outliers. | 18/06/2026 | 18/06/2026 | <https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.interpolate.html> |
+| Mon | - Create the `src/preprocessing.py` file. <br> - Write the `load_data()` and `handle_missing_values()` functions to load and clean raw SCADA data. | 15/06/2026 | 17/06/2026 | <https://pandas.pydata.org/docs/> |
+| Tue | - Program the `src/data_validation.py` module with the `validate_data()` function to automate input data integrity checks. | 16/06/2026 | 17/06/2026 | <https://docs.python.org/3/> |
+| Wed | - Write the `data_validation.py` script to run independent testing without executing the entire pipeline. | 17/06/2026 | 18/06/2026 | <https://docs.pytest.org/> |
+| Thu | - Integrate interpolation mechanisms to handle missing time-series data (lag) and preserve valid outliers. | 18/06/2026 | 19/06/2026 | <https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.interpolate.html> |
 | Fri | - **Practice:** <br>&emsp; + Test the `data_validation.py` script locally via terminal. <br>&emsp; + Ensure it returns a 'PASS' status and handle any warnings before exporting the clean data. | 19/06/2026 | 19/06/2026 |  |
 
 ### Week 3 Achievements:

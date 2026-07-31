@@ -15,11 +15,11 @@ pre: " <b> 1.8. </b> "
 
 | Thứ / Day | Công việc / Task | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| Mon | - Write Technical Documentation detailing: <br>&emsp; + Preprocessing pipeline architecture. <br>&emsp; + Applied Feature Engineering techniques. | 20/07/2026 | 20/07/2026 | |
-| Tue | - Guide the team on using `data_validation.py` before running models. | 21/07/2026 | 21/07/2026 | |
-| Wed | - Assist the ML team in handling any remaining data errors. | 22/07/2026 | 22/07/2026 | |
-| Thu | - Present Preprocessing and Validation module results to the team. | 23/07/2026 | 23/07/2026 | |
-| Fri | - **Practice:** Final code review, commit to GitHub, and complete internship report. | 24/07/2026 | 24/07/2026 | |
+| Mon | - Write Technical Documentation detailing: <br>&emsp; + Preprocessing pipeline architecture. <br>&emsp; + Applied Feature Engineering techniques. | 20/07/2026 | 22/07/2026 |  |
+| Tue | - Guide the team on using `data_validation.py` before running models. | 21/07/2026 | 22/07/2026 |  |
+| Wed | - Assist the ML team in handling any remaining data errors. | 22/07/2026 | 23/07/2026 |  |
+| Thu | - Present Preprocessing and Validation module results to the team. | 23/07/2026 | 24/07/2026 |  |
+| Fri | - **Practice:** Final code review, commit to GitHub, and complete internship report. | 24/07/2026 | 24/07/2026 |  |
 
 ### Kết quả đạt được:
 

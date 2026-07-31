@@ -15,11 +15,11 @@ pre: " <b> 1.6. </b> "
 
 | Thứ / Day | Công việc / Task | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 2 | - Mở rộng module `validate_data()` để kiểm tra phân phối dữ liệu (Data Drift). | 06/07/2026 | 06/07/2026 | |
-| 3 | - Bổ sung các rule kiểm tra ngoại lệ: giới hạn min/max vật lý của từng cảm biến. | 07/07/2026 | 07/07/2026 | |
-| 4 | - Tích hợp xử lý Exception và xuất Log rõ ràng trong `data_validation.py`. | 08/07/2026 | 08/07/2026 | |
-| 5 | - Tạo báo cáo kiểm thử định dạng JSON/Text. | 09/07/2026 | 09/07/2026 | |
-| 6 | - **Thực hành:** Kiểm thử luồng dữ liệu lỗi cố ý để đảm bảo validation script hoạt động chính xác chặn lại dữ liệu xấu. | 10/07/2026 | 10/07/2026 | |
+| 2 | - Mở rộng module `validate_data()` để kiểm tra phân phối dữ liệu (Data Drift). | 06/07/2026 | 08/07/2026 |  |
+| 3 | - Bổ sung các rule kiểm tra ngoại lệ: giới hạn min/max vật lý của từng cảm biến. | 07/07/2026 | 08/07/2026 |  |
+| 4 | - Tích hợp xử lý Exception và xuất Log rõ ràng trong `data_validation.py`. | 08/07/2026 | 09/07/2026 |  |
+| 5 | - Tạo báo cáo kiểm thử định dạng JSON/Text. | 09/07/2026 | 10/07/2026 |  |
+| 6 | - **Thực hành:** Kiểm thử luồng dữ liệu lỗi cố ý để đảm bảo validation script hoạt động chính xác chặn lại dữ liệu xấu. | 10/07/2026 | 10/07/2026 |  |
 
 ### Kết quả đạt được:
 
