@@ -1,43 +1,35 @@
 ---
-title: "Self-Assessment"
-date: 2024-01-01
+title: "Self-evaluation"
+date: 2026-07-24
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
+During my internship at **Amazon Web Services Vietnam Co., Ltd.** from **June 1, 2026** to **July 24, 2026**, I had the opportunity to learn, practice, and apply the MLOps knowledge equipped at school into a real working environment. 
+I directly participated in the **Data Preprocessing and Data Validation phase to detect SCADA anomalies using the XGBoost algorithm on the AWS SageMaker platform**. Through this project, I have significantly improved my skills in **Python programming, handling noisy data and applying data_validation module directly to the process, and writing technical documentation**. 
 
-During my internship, I had the opportunity to apply the knowledge acquired at university to a real-world project by developing the **SCADA Fault Prediction Platform**, an AWS SageMaker-based intelligent predictive maintenance solution.
+Regarding my work attitude, I always try to complete tasks well, proactively research documentation from AWS, and actively communicate with team members to ensure the model is delivered to standard, best prepared for the CI/CD deployment phase.
 
-Throughout the internship, I participated in the complete development lifecycle of the project, including data preprocessing, feature engineering, machine learning model development, model deployment on Amazon SageMaker, endpoint monitoring with Amazon CloudWatch, notification services using Amazon SNS, and technical documentation. These tasks allowed me to strengthen both my technical knowledge and practical engineering skills while becoming more familiar with cloud-based machine learning workflows.
+To objectively reflect the internship process, I would like to self-evaluate based on the criteria below:
 
-Besides improving my technical abilities in Python, machine learning, and AWS cloud services, I also developed soft skills such as teamwork, communication, problem-solving, time management, documentation writing, and presentation skills. I always completed assigned tasks on schedule, actively learned new technologies, accepted feedback from mentors, and continuously improved my work throughout the internship.
+| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
+| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | --- | --- | ---------- |
+| 1   | **Knowledge and professional skills** | Understanding of the industry, applying knowledge to practice, tool usage skills, work quality | ✅   | ☐   | ☐          |
+| 2   | **Learning ability**                | Acquiring new knowledge, learning quickly                                                            | ☐   | ✅   | ☐          |
+| 3   | **Proactiveness**                        | Self-researching, taking tasks without waiting for instructions                                                  | ✅   | ☐   | ☐          |
+| 4   | **Sense of responsibility**           | Completing work on time, ensuring quality                                                | ✅   | ☐   | ☐          |
+| 5   | **Discipline**                         | Complying with time, rules, and working procedures                                                   | ☐      | ✅   | ☐       |
+| 6   | **Progressive attitude**                   | Willing to receive feedback and improve oneself                                                     | ☐   | ✅   | ☐          |
+| 7   | **Communication**                       | Presenting ideas, reporting work clearly                                                     | ☐   | ✅   | ☐          |
+| 8   | **Team collaboration**                    | Working effectively with colleagues, participating in groups                                                 | ✅   | ☐   | ☐          |
+| 9   | **Professional conduct**            | Respecting colleagues, partners, working environment                                              | ✅   | ☐   | ☐          |
+| 10  | **Problem-solving mindset**        | Identifying problems, proposing solutions, being creative                                                    | ☐   | ✅   | ☐          |
+| 11  | **Contribution to project/organization**      | Work efficiency, improvement initiatives, recognition from the team                                         | ✅   | ☐   | ☐          |
+| 12  | **Overall**                        | General assessment of the entire internship process                                                     | ✅   | ☐   | ☐          |
 
-To objectively evaluate my internship performance, I conducted the following self-assessment.
+### Areas for Improvement
 
-| No. | Criteria | Description | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | :--: | :--: | :-----: |
-| 1 | **Professional knowledge & skills** | Understanding technical concepts and applying them to develop the SCADA Fault Prediction Platform | ✅ | ☐ | ☐ |
-| 2 | **Ability to learn** | Quickly learning new AWS services, machine learning concepts, and development tools | ✅ | ☐ | ☐ |
-| 3 | **Proactiveness** | Actively researching documentation and solving technical issues independently | ✅ | ☐ | ☐ |
-| 4 | **Sense of responsibility** | Completing assigned tasks on time while maintaining work quality | ✅ | ☐ | ☐ |
-| 5 | **Discipline** | Following internship schedules, project milestones, and organizational regulations | ✅ | ☐ | ☐ |
-| 6 | **Progressive mindset** | Accepting feedback and continuously improving technical and professional skills | ✅ | ☐ | ☐ |
-| 7 | **Communication** | Reporting progress clearly and communicating effectively with mentors and teammates | ☐ | ✅ | ☐ |
-| 8 | **Teamwork** | Collaborating with teammates throughout project development and documentation | ✅ | ☐ | ☐ |
-| 9 | **Professional conduct** | Demonstrating professionalism, responsibility, and respect in the working environment | ✅ | ☐ | ☐ |
-| 10 | **Problem-solving skills** | Identifying issues and proposing effective technical solutions during implementation | ✅ | ☐ | ☐ |
-| 11 | **Contribution to project/team** | Contributing to the workshop documentation, deployment process, and overall project completion | ✅ | ☐ | ☐ |
-| 12 | **Overall** | Overall evaluation of the internship period | ✅ | ☐ | ☐ |
-
-## Areas for Improvement
-
-Although I achieved most of the internship objectives, there are still several aspects that I would like to improve in the future:
-
-- Gain deeper knowledge of advanced MLOps practices, including CI/CD pipelines, automated model retraining, and model version management.
-- Improve experience with large-scale AWS architectures and production-level cloud deployments.
-- Strengthen presentation and technical communication skills when explaining complex systems to different audiences.
-- Continue improving problem-solving abilities when working with large datasets and distributed cloud services.
-- Expand knowledge of industrial AI applications and predictive maintenance techniques beyond the scope of this project.
-
-Overall, this internship provided valuable practical experience in cloud computing, machine learning, and software engineering. It also strengthened my confidence in applying academic knowledge to real-world projects and prepared me for future careers in Artificial Intelligence, Machine Learning, and Cloud Engineering.
+* **Organizational Discipline:** Need to improve discipline, strictly adhere to time and organizational regulations. At the same time, need to adhere more closely to standard procedures in managing and cleaning up cloud resources (AWS) to optimize project costs.
+* **Problem-solving mindset:** Need to practice deeper analytical thinking when facing errors that arise during data processing and cleaning or system integration, instead of just focusing on temporary surface-level solutions.
+* **Communication skills:** Need to cultivate the ability to express technical ideas more concisely and understandably in daily communication. In addition, need to be more flexible in handling situations, proactively asking questions, and being open to receiving feedback when coordinating across departments.

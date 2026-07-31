@@ -1,6 +1,6 @@
 ---
 title: "Internship Report"
-date: 2026-07-24
+date: 2026-07-14
 weight: 1
 chapter: false
 ---
@@ -8,28 +8,30 @@ chapter: false
     
 # Internship Report
 
-
+<!-- {{% notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+{{% /notice %}} -->
 
 ### Student Information:
-&emsp; **Full Name:** Tran Nhu Nhat Hoang
+&emsp; **Full Name:** Huynh Duy Chuong
 
-&emsp; **Phone Number:** 0776261259 
+&emsp; **Phone Number:** 0393622941
 
-&emsp; **Email:** trannhunhathoang1@gmail.com
+&emsp; **Email:** chuong.huynh2310363@hcmut.edu.vn
 
-&emsp; **University:** Ho Chi Minh City University of Technology 
+&emsp; **University:** Ho Chi Minh City University of Technology
 
 &emsp; **Major:** Computer Engineering
 
-&emsp; **Class:** FCAJ-HCMUT
+&emsp; **Class:** MT23KTM1
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
 &emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From 01/06/2026 to 31/07/2026
+&emsp; **Internship Duration:** From 01/06/2026 to 14/8/2026
 
-![Your profile picture](/images/avatar.jpg)
+![Your profile picture](/images/ava.jpg)
 
 ### Report Content
 
@@ -40,3 +42,4 @@ chapter: false
 5.  [Workshop](5-Workshop/)
 6.  [Self-evaluation](6-Self-evaluation/)
 7.  [Sharing and Feedback](7-Feedback/)
+8.  [Link Github Project](8-Github/)

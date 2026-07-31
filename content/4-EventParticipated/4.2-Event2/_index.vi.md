@@ -1,148 +1,81 @@
 ---
 title: "Event 2"
-date: 2024-01-01
+date: 2026-06-20
 weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-
-
-# Bài thu hoạch: Cloud Architect Competition
+# Bài thu hoạch “Cuộc thi Cloud Architect”
 
 ### Mục Đích Của Sự Kiện
 
-- Củng cố kiến thức về AWS Cloud thông qua hình thức thi đấu.
-- Rèn luyện kỹ năng thiết kế kiến trúc Cloud.
-- Nâng cao khả năng làm việc nhóm và tư duy giải quyết vấn đề.
-- Tạo môi trường học tập và giao lưu giữa các nhóm thực tập.
+- Tạo ra môi trường học tập, thi đấu và giao lưu sôi nổi cho các thành viên đam mê điện toán đám mây.
+- Đánh giá, củng cố và mở rộng kiến thức thực tế về Điện toán đám mây (Cloud Computing) và các dịch vụ trên nền tảng AWS.
+- Rèn luyện kỹ năng làm việc nhóm, tư duy phân tích kiến trúc và phản xạ xử lý tình huống dưới áp lực thời gian.
+- Thúc đẩy tinh thần chủ động học hỏi và kết nối cộng đồng giữa các sinh viên cùng định hướng kỹ thuật.
+
+### Thể Lệ Thi Đấu
+
+- **Hình thức:** Thi đấu đối kháng trực tiếp theo đội.
+- **Cấu trúc vòng thi:** 
+  - Hai đội lần lượt trả lời 10 câu hỏi với cấp độ thử thách tăng dần từ dễ đến khó.
+  - Nội dung tập trung vào các khái niệm Cloud Computing, hệ sinh thái dịch vụ AWS và các nguyên tắc thiết kế kiến trúc hệ thống tối ưu.
+  - Đội đạt tổng số điểm cao hơn sẽ giành quyền bước tiếp vào vòng trong.
+- **Thăng bằng / Câu hỏi phụ:** Trong trường hợp hai đội hòa điểm sau 10 câu hỏi chính, một câu hỏi phụ quyết định sẽ được đưa ra. Đội có tín hiệu trả lời nhanh nhất và chính xác hơn sẽ giành chiến thắng chung cuộc.
 
 ---
 
-### Thể Lệ Cuộc Thi
+### Nội Dung Kiến Thức Trọng Tâm
 
-Cloud Architect được tổ chức dưới hình thức thi đấu đối kháng giữa các đội.
+#### 1. Tổng quan & Hạ tầng cốt lõi Điện toán đám mây
+- Các khái niệm nền tảng về IaaS, PaaS, SaaS và mô hình hạ tầng toàn cầu của AWS (Regions, Availability Zones, Edge Locations).
+- Kỹ thuật phân tích yêu cầu bài toán để lựa chọn mô hình triển khai phù hợp (Public, Private, Hybrid Cloud).
 
-- Có **8 đội**, mỗi đội gồm **5 thành viên**.
-- Hai đội lần lượt trả lời các câu hỏi từ mức độ dễ đến khó.
-- Đội có số điểm cao hơn sẽ giành quyền đi tiếp.
-- Nếu hai đội hòa điểm sau 10 câu hỏi sẽ có câu hỏi phụ để phân định thắng thua.
+#### 2. Kiến trúc & Các dịch vụ trọng yếu trên AWS
+- **Compute & Networking:** Vận dụng và phân biệt các dịch vụ máy chủ ảo (Amazon EC2), VPC, Subnets, Route Tables, Internet Gateways và Security Groups.
+- **Storage & Database:** Điểm khác biệt và trường hợp sử dụng tối ưu giữa Amazon S3, EBS, EFS cũng như các dòng cơ sở dữ liệu Amazon RDS, DynamoDB.
+- **Security & IAM:** Các nguyên tắc phân quyền tối thiểu (Least Privilege) và mô hình chia sẻ trách nhiệm (AWS Shared Responsibility Model).
 
-Ngoài ra, mỗi đội được sử dụng hai kỹ năng đặc biệt:
-
-- **Rủi ro tối thiểu**: Nếu trả lời sai sẽ không bị trừ điểm, nếu đúng chỉ nhận 50% số điểm.
-- **Ngôi sao hy vọng**: Nếu trả lời đúng sẽ được nhân đôi số điểm, nếu sai sẽ bị trừ gấp đôi.
-
----
-
-### Nội Dung Thi Đấu
-
-Các câu hỏi tập trung vào những kiến thức cơ bản và thực tế về AWS Cloud, bao gồm:
-
-#### AWS Compute
-
-- Amazon EC2
-- AWS Lambda
-- Amazon ECS
-- AWS Fargate
-
-#### Storage
-
-- Amazon S3
-- Amazon EBS
-- Amazon EFS
-
-#### Networking
-
-- Amazon VPC
-- Security Group
-- Network ACL
-- Elastic Load Balancer
-
-#### Database
-
-- Amazon RDS
-- Amazon DynamoDB
-
-#### Monitoring
-
-- Amazon CloudWatch
-- AWS CloudTrail
-
-#### Security
-
-- AWS IAM
-- IAM Roles
-- IAM Policies
-
-#### Architecture Design
-
-- High Availability
-- Scalability
-- Cost Optimization
-- Well-Architected Framework
-
-Ngoài các câu hỏi lý thuyết, một số câu hỏi yêu cầu lựa chọn dịch vụ AWS phù hợp với từng tình huống thực tế nhằm đánh giá khả năng thiết kế kiến trúc hệ thống.
+#### 3. Nguyên tắc thiết kế kiến trúc hệ thống (AWS Well-Architected Framework)
+- Phân tích và đưa ra giải pháp thiết kế hệ thống đáp ứng các trụ cột: Tối ưu chi phí, Hiệu năng, Độ tin cậy (Fault Tolerance & High Availability), Security và Vận hành xuất sắc (Operational Excellence).
 
 ---
 
-### Những Gì Học Được
+### Kết Quả Đạt Được
 
-#### Kiến thức chuyên môn
+#### Củng Cố Kiến Thức Chuyên Môn
+- Hệ thống hóa toàn bộ kiến thức lý thuyết và thực hành về Cloud Computing cùng các dịch vụ cốt lõi trên AWS.
+- Nâng cao tư duy phân tích kiến trúc hệ thống thông qua việc giải quyết các câu hỏi tình huống thực tế trong đề thi.
 
-- Ôn tập và củng cố kiến thức về các dịch vụ AWS cơ bản.
-- Hiểu rõ chức năng và trường hợp sử dụng của từng dịch vụ.
-- Rèn luyện tư duy lựa chọn kiến trúc phù hợp với từng yêu cầu.
-
-#### Kỹ năng làm việc nhóm
-
-- Thảo luận nhanh để đưa ra đáp án chính xác.
-- Phân chia nhiệm vụ dựa trên thế mạnh của từng thành viên.
-- Phối hợp hiệu quả trong môi trường có giới hạn thời gian.
-
-#### Kỹ năng giải quyết vấn đề
-
-- Phân tích tình huống trước khi lựa chọn dịch vụ AWS.
-- Cân nhắc giữa hiệu năng, chi phí và khả năng mở rộng.
-- Đưa ra quyết định nhanh dưới áp lực thời gian.
+#### Phát Triển Kỹ Năng Mềm & Phản Xạ
+- **Kỹ năng làm việc nhóm:** Luyện tập cách trao đổi nhanh, thống nhất ý kiến và phân công tư duy hiệu quả cùng đồng đội dưới áp lực thời gian.
+- **Phản xạ & Tư duy phản biện:** Nâng cao tốc độ phân tích đề bài, loại trừ đáp án nhiễu và đưa ra quyết định chính xác.
+- **Sự tự tin:** Tăng cường sự tự tin khi thảo luận, trình bày và tranh luận về các chủ đề kỹ thuật liên quan đến Cloud.
 
 ---
 
-### Ứng Dụng Vào Học Tập Và Dự Án
+### Ứng Dụng Vào Công Việc & Học Tập
 
-Sau cuộc thi, mình có thể áp dụng những kiến thức đã học vào quá trình học tập và thực hiện dự án như:
-
-- Thiết kế kiến trúc AWS phù hợp với yêu cầu của hệ thống.
-- Lựa chọn dịch vụ AWS dựa trên hiệu năng và chi phí.
-- Áp dụng các nguyên tắc của AWS Well-Architected Framework.
-- Cải thiện kỹ năng làm việc nhóm và thảo luận kỹ thuật.
+- **Áp dụng vào đồ án & dự án thực tế:** Sử dụng các nguyên tắc thiết kế kiến trúc vừa chuẩn hóa để xây dựng hạ tầng Cloud tối ưu chi phí và có khả năng mở rộng cho các đồ án môn học.
+- **Chuẩn bị cho các chứng chỉ AWS:** Lấy lượng câu hỏi và tình huống trong cuộc thi làm tài liệu ôn tập thực chiến cho các kỳ thi chứng chỉ như AWS Certified Cloud Practitioner hoặc AWS Certified Solutions Architect - Associate.
+- **Duy trì học tập cộng đồng:** Tiếp tục chủ động giao lưu, học hỏi kinh nghiệm từ các thành viên trong sự kiện để cùng nhau phát triển chuyên môn.
 
 ---
 
-### Trải Nghiệm Trong Sự Kiện
+### Trải nghiệm trong event
 
-Cloud Architect là một hoạt động mang tính tương tác cao khi các đội phải phối hợp với nhau để trả lời các câu hỏi về AWS trong thời gian ngắn. Không chỉ yêu cầu kiến thức về các dịch vụ AWS, cuộc thi còn đòi hỏi khả năng phân tích tình huống, tư duy thiết kế hệ thống và làm việc nhóm hiệu quả.
+Sự kiện **“Cuộc thi Cloud Architect”** đã mang lại một không khí thi đấu bùng nổ, gay kịch nhưng vô cùng bổ ích:
 
-Thông qua các câu hỏi về EC2, S3, Lambda, VPC, IAM, CloudWatch và nhiều dịch vụ AWS khác, mình có cơ hội ôn tập lại kiến thức đã học cũng như hiểu rõ hơn cách lựa chọn dịch vụ phù hợp trong từng bài toán thực tế.
+#### Tinh thần thi đấu & Sự kịch tính
+- Bầu không khí tranh tài giữa các đội diễn ra rất sôi nổi. Sự kịch tính đẩy lên cao trào ở những câu hỏi mức độ khó và đặc biệt là khoảnh khắc quyết định ở câu hỏi phụ khi các đội hòa điểm.
+- Trải nghiệm cảm giác suy nghĩ nhanh và phối hợp nhịp nhàng với đồng đội để đưa ra đáp án trong thời gian ngắn.
 
-Ngoài việc cạnh tranh giữa các đội, sự kiện còn tạo ra môi trường học tập sôi nổi, giúp các thành viên trao đổi kinh nghiệm và bổ sung kiến thức cho nhau.
+#### Giao lưu & Học hỏi
+- Có cơ hội tiếp xúc, trao đổi góc nhìn kỹ thuật với nhiều bạn sinh viên tài năng khác.
+- Học hỏi được nhiều mẹo tư duy và cách tiếp cận bài toán kiến trúc độc đáo từ các đội bạn.
 
----
+#### Hình ảnh khi tham gia sự kiện
+![Sự kiện](/images/4-Events/event2/6C7A6809.JPG)
 
-### Bài Học Rút Ra
-
-- Hiểu rõ chức năng và phạm vi sử dụng của các dịch vụ AWS là rất quan trọng khi thiết kế hệ thống.
-- Kiến thức nền tảng về Cloud Architecture giúp đưa ra các quyết định nhanh và chính xác.
-- Làm việc nhóm hiệu quả góp phần nâng cao chất lượng giải quyết vấn đề.
-- Việc thường xuyên tham gia các hoạt động học thuật giúp củng cố kiến thức và tăng khả năng phản xạ trong các tình huống thực tế.
-
----
-
-### Một Số Hình Ảnh Khi Tham Gia Sự Kiện
-
-
-![Cloud Architect Competition](/images/4-Events/event2/competition.png)
-
-![Team Discussion](/images/4-Events/event2/team.png)
-
-> Nhìn chung, Cloud Architect không chỉ là một cuộc thi kiến thức về AWS mà còn là cơ hội để rèn luyện tư duy thiết kế kiến trúc Cloud, kỹ năng làm việc nhóm và khả năng đưa ra quyết định trong thời gian ngắn. Đây là một trải nghiệm hữu ích giúp mình củng cố kiến thức nền tảng về AWS và chuẩn bị tốt hơn cho các dự án thực tế cũng như định hướng nghề nghiệp trong lĩnh vực Cloud Computing.
+> Tổng kết: Cuộc thi Cloud Architect không chỉ là một sân chơi tri thức kịch tính mà còn là cơ hội tuyệt vời để em củng cố nền tảng kỹ thuật, rèn luyện bản lĩnh làm việc nhóm và tiếp thêm động lực theo đuổi con đường Cloud/DevOps.

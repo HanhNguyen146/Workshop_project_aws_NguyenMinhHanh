@@ -46,9 +46,9 @@ Mở Terminal và chạy lệnh sau:
 **Kết quả màn hình hiển thị sau khi hoàn tất:**
 
 ```text
-🚀 Đang submit SageMaker Processing Job...
+Đang submit SageMaker Processing Job...
 ...
-✅ Processing Job hoàn tất!
+Processing Job hoàn tất!
  Processed : s3://amznce23/T1_AD/data/processed/
  Train     : s3://amznce23/T1_AD/data/features/train/
  Test      : s3://amznce23/T1_AD/data/features/test/

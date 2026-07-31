@@ -1,64 +1,50 @@
 ---
 title: "Sharing and Feedback"
-date: 2024-01-01
+date: 2026-07-30
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
+### General Assessment
 
-During my internship in the **First Cloud AI Journey (FCAJ)** program, I had the opportunity to work on a practical cloud-based machine learning project while receiving guidance from mentors and interacting with other participants. The internship not only strengthened my technical knowledge but also helped me develop professional skills and gain valuable experience for my future career.
+**1. Working Environment**  
+The First Cloud AI Journey (FCAJ) program provided a professional and dynamic cloud practice environment. Having direct access to the AWS ecosystem helped me get used to the actual work pace of an MLOps Engineer. The group workspace and support tools always operated smoothly, making it easy for me to discuss technical issues with everyone.
 
-## Overall Evaluation
+**2. Support from Mentor / Team Admin**  
+I was extremely impressed with the enthusiastic support from the Mentors. When facing difficulties in handling class imbalance for the SCADA dataset or configuring IAM Role permissions for SageMaker, they not only suggested using the `scale_pos_weight` parameter but also explained the mathematical nature and how the data flow works on AWS in great detail. The admins were also very attentive in reminding us of the progress and providing documents in a timely manner.
 
-### 1. Learning Environment
+**3. Alignment between Work and Major**  
+The project "Anomaly Detection from SCADA Data using MLOps" perfectly matches the Artificial Intelligence / Data Science major I am pursuing. Academic knowledge from school about the XGBoost algorithm or Data Preprocessing (e.g., trigonometric transformation of wind angle, outlier integrity) was put into a strict software engineering process on the Amazon SageMaker platform, helping me clearly understand the actual lifecycle of a machine learning model.
 
-The learning environment was friendly, professional, and highly supportive. The program provided clear learning materials, practical workshops, and opportunities to apply theoretical knowledge to real-world scenarios. This allowed me to gradually build confidence in using AWS services and machine learning technologies.
+**4. Opportunities for Learning & Skill Development**  
+Through FCAJ, I have trained many core skills:
+- **Cloud Computing Skills:** Mastering AWS services like S3 (Data Lake), IAM (Security), and SageMaker (Training, HPO, Model Registry).
+- **Data Science Skills:** Preprocessing IoT/SCADA sensor data (handling Label_Error, time-series lag), automatic hyperparameter tuning.
+- **Teamwork & Problem Solving Skills:** Knowing how to read logs from CloudWatch to debug errors and coordinate work when deploying system architecture.
 
-### 2. Mentor Support
+**5. Culture & Team Spirit**  
+The team spirit in our group was fantastic. When there was an issue with the `Label_Error` label being altered during scaling (like Chuong encountered), or when the preprocessing pipeline needed to handle Data Validation (which I was in charge of), everyone gathered to find a solution. The cohesion and the spirit of "progressing together" were always maintained at the highest level.
 
-The mentors were enthusiastic and always willing to answer questions whenever difficulties arose. Instead of simply providing solutions, they encouraged independent thinking and guided me toward finding appropriate approaches, which significantly improved my problem-solving ability.
+**6. Policies / Benefits for Interns**  
+The program provided a practice AWS account, helping us students comfortably deploy architecture without worrying about cost barriers (Cloud Billing). The internal sharing sessions and workshops were organized methodically, practically, and highly applicable.
 
-### 3. Project Experience
+### Other Questions
 
-The internship project gave me hands-on experience in developing an end-to-end machine learning solution using Amazon SageMaker and related AWS services. Through the SCADA Fault Prediction Platform, I gained a better understanding of the complete machine learning workflow, from data preprocessing and model training to deployment and system monitoring.
+- **What were you most satisfied with during your internship?**  
+  What I am most proud of is successfully deploying an End-to-End MLOps architecture on the AWS cloud myself instead of just running code on a personal computer. Seeing the model automatically fetch data from S3, automatically tune (HPO), and store it in the Model Registry brings a great sense of "achievement".
 
-### 4. Knowledge and Skill Development
+- **What do you think the company needs to improve for future interns?**  
+  I hope the program can add some practical sessions on how to monitor model performance after deployment (e.g., handling Data Drift / Model Drift with SageMaker Model Monitor), as this is also a very practical and important part of MLOps.
 
-Throughout the internship, I improved my knowledge in several areas, including:
+- **If you introduced this to your friends, would you recommend they intern here? Why?**  
+  Definitely YES! This is a perfect stepping stone to bridge the gap between Machine Learning theory in university and the operational skills that large tech companies are demanding.
 
-- Amazon SageMaker and AWS cloud services.
-- Machine learning model development and deployment.
-- Cloud-based system architecture.
-- Technical documentation and workshop development.
-- Teamwork, communication, and time management.
+### Suggestions & Desires
 
-### 5. Program Organization
-
-The internship schedule and learning roadmap were well organized, making it easy to follow each development stage. Regular workshops, sharing sessions, and technical events also provided valuable opportunities to learn from mentors and other participants.
-
----
-
-# Personal Reflection
-
-### Most Valuable Experience
-
-The most valuable experience was having the opportunity to build and deploy a complete machine learning application on AWS instead of only developing models locally. This helped me better understand real-world engineering workflows and cloud deployment practices.
-
-### Suggestions for Improvement
-
-Although the program was well organized, I believe it could be further improved by:
-
-- Providing more advanced workshops on MLOps and production deployment.
-- Organizing additional technical sharing sessions from previous internship participants.
-- Including more collaborative mini-projects to strengthen teamwork experience.
-
-### Recommendation
-
-I would definitely recommend the First Cloud AI Journey program to other students who are interested in Cloud Computing, Artificial Intelligence, and Machine Learning. The program provides valuable practical experience, a structured learning roadmap, and an excellent opportunity to apply academic knowledge to real-world projects.
-
----
-
-# Final Thoughts
-
-Overall, the internship was a meaningful learning experience that allowed me to improve both technical expertise and professional skills. It also strengthened my interest in pursuing a career in Cloud Computing and Artificial Intelligence. I sincerely appreciate the support from the mentors and the FCAJ team throughout the internship and look forward to applying the knowledge gained in future projects.
+- **Do you have any suggestions to improve the internship experience?**  
+  I hope the FCAJ program will provide additional hardware support such as IoT Gateways or edge microcontrollers to simulate real-time data collection and streaming to Amazon S3. This would complete a comprehensive industrial MLOps picture from device to cloud.
+- **Do you want to continue this program in the future?**  
+  I really want to continue accompanying the program, perhaps in projects upgrading CI/CD pipelines (like SageMaker Pipelines) or in a role supporting subsequent batches.
+- **Other feedback (feel free to share):**  
+  Thank you to the FCAJ team, Mentors, and admins for creating an extremely high-quality and meaningful technology playground!

@@ -1,134 +1,100 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-06-13
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-
-# Bài thu hoạch: AWS Study Group Community Sharing Session
+# Bài thu hoạch “AWS Study Group Community Sharing Session”
 
 ### Mục Đích Của Sự Kiện
 
-- Cập nhật các công nghệ mới trong lĩnh vực Cloud Computing và AWS.
-- Chia sẻ kinh nghiệm triển khai thực tế từ các diễn giả trong cộng đồng.
-- Giới thiệu các công nghệ hiện đại phục vụ phát triển phần mềm và hạ tầng.
-- Định hướng học tập và phát triển nghề nghiệp trong lĩnh vực CNTT.
+- Chia sẻ bức tranh thực tế về công việc, cơ hội nghề nghiệp và lộ trình phát triển trong các lĩnh vực Cloud, DevOps, Data Analytics và AI.
+- Giới thiệu quy trình tuyển dụng tiêu chuẩn, kỹ năng cốt lõi và văn hóa làm việc tại các Tập đoàn Đa quốc gia (MNCs).
+- Phân tích kiến trúc hệ thống thực tế (case study URL Shortener) và các nguyên lý thiết kế ứng dụng có khả năng mở rộng cao trên AWS.
+- Giới thiệu cộng đồng AWS Student Builder Group và lộ trình đồng hành, học tập thực chiến dành cho sinh viên.
 
----
+### Danh Sách Diễn Giả
 
-### Danh Sách Chủ Đề
-
-Buổi chia sẻ bao gồm nhiều chủ đề đa dạng:
-
-- **Docker – A Containerization Technology**
-- **Combining AWS WAF with Machine Learning for Cyber Attack Detection**
-- **Multiplayer in the Cloud: Connecting Godot Clients with AWS Services**
-- **Cách làm việc nhóm hiệu quả**
-- **AWS Neptune for Building a Graph Knowledge Base**
-- **Từ IT Helpdesk lên Senior Sysadmin: Hành trình tự học và lộ trình phát triển**
+- **Mr. Cường Nguyễn** - Process Engineer
+- **Mr. Đạt Phạm** - Data Analytics Engineer (Kamereo / Colgate-Palmolive)
+- **Mr. Trương Hoàng Trọng** - DevOps Engineer @ Endava Vietnam
+- **Mr. Danh Hoàng Hiếu Nghị** - AI Engineer, AWS Community Builder & AWS Student Builder Group Leader
+- **Mr. Đinh Trung Kiên** - Lead Developer at Startup
+- **Mr. Nguyễn Minh Thọ** - Student
 
 ---
 
 ### Nội Dung Nổi Bật
 
-#### Docker – Công nghệ Containerization
+#### 1. Thực tế công việc Data Analytics & Văn hóa tại tập đoàn đa quốc gia (MNC)
+- **Công việc thực tế:** Phân tích chỉ số vận hành/kinh doanh (GMV, Fill Rate, Last Mile Cost), thiết kế Dashboard quản lý xu hướng, phát hiện bất thường và tối ưu chi phí sản xuất/IoT trong nhà máy.
+- **Bộ kỹ năng cốt lõi:** Tư duy phản biện, kỹ năng giao tiếp, giải quyết vấn đề và đặc biệt là "Kể chuyện với dữ liệu" (Data Storytelling).
+- **Mô hình phát triển 5 cấp độ:** Follower → Learner → Problem Solver → System Thinker → Super Star.
+- **Quy trình tuyển dụng MNC:** Sàng lọc ATS/Sơ vấn → Test năng lực → Phỏng vấn chuyên môn (STAR model) → Hòa hợp văn hóa.
+- **Văn hóa doanh nghiệp nổi bật:** Văn hóa *No-Blame Post-Mortem* (tập trung tìm nguyên nhân gốc rễ thay vì đổ lỗi cá nhân) và văn hóa *Caring & Inclusive*.
 
-- Giới thiệu tổng quan về Docker và Container.
-- Lợi ích của việc đóng gói ứng dụng thành các container độc lập.
-- So sánh Docker với Virtual Machine và các trường hợp sử dụng phổ biến.
+#### 2. Góc nhìn thực tế về nghề DevOps (DevOps Engineer)
+- **Thực tế công việc:** Không chỉ viết pipeline CI/CD hay quản lý Docker/Kubernetes, công việc thực tế đòi hỏi giải quyết các bài toán vận hành 24/7, incident handling, troubleshooting, hỗ trợ môi trường, tối ưu chi phí Cloud và xác định quyền sở hữu hệ thống.
+- **Lộ trình học tập cơ bản:** Làm chủ Linux, Networking, lập trình (Python/Golang), Git/CI-CD, Containers và xây dựng các project nhỏ thực chiến.
+- **Tư duy DevOps giỏi:** "Tools change, Fundamentals stay" — Tập trung tư duy hệ thống (System Thinking), tự động hóa công việc lặp lại và dùng AI như công cụ đòn bẩy nâng cao hiệu suất.
 
-#### AWS WAF kết hợp Machine Learning
+#### 3. Thiết kế hệ thống URL Shortener mở rộng quy mô (Scalable URL Shortener on AWS)
+- **Vấn đề của hệ thống truyền thống:** Dễ bị nghẽn (Single Point of Failure), độ trễ đọc cao, khó mở rộng scale.
+- **Kiến trúc tối ưu trên AWS:**
+  - *Front-end & Security:* Amazon CloudFront, AWS WAF, Amazon Amplify, Route 53, Cognito.
+  - *Key Generation Service (KGS):* Tiền tạo mã ngắn (short code) lưu vào Amazon ElastiCache (Redis) giúp việc tạo URL diễn ra tức thì, tránh đụng độ (collision-free).
+  - *Backend & Database:* AWS Fargate (ECS Cluster), Amazon DynamoDB, ElastiCache Redis áp dụng mô hình Cache-aside Pattern để tối ưu latency.
+- **Các nguyên lý kiến trúc rút ra:** Separation of Concerns, Defense at the Edge, Pre-computation over On-demand, và Cache-aside Pattern.
 
-- Giới thiệu AWS Web Application Firewall.
-- Phát hiện và giảm thiểu các cuộc tấn công Web.
-- Ứng dụng Machine Learning trong phân tích và nhận diện các hành vi bất thường.
-
-#### Multiplayer trên AWS
-
-- Xây dựng kiến trúc Multiplayer trên nền tảng Cloud.
-- Kết nối Godot Client với các dịch vụ AWS.
-- Đồng bộ trạng thái trò chơi giữa nhiều người chơi.
-
-#### Làm việc nhóm hiệu quả
-
-- Phương pháp giao tiếp và phối hợp trong nhóm.
-- Quản lý công việc và phân chia nhiệm vụ.
-- Kinh nghiệm làm việc nhóm trong các dự án phần mềm.
-
-#### AWS Neptune
-
-- Tổng quan về Graph Database.
-- Xây dựng Graph Knowledge Base bằng Amazon Neptune.
-- Một số ứng dụng thực tế của Graph Database trong doanh nghiệp.
-
-#### Lộ trình nghề nghiệp
-
-- Chia sẻ quá trình phát triển từ IT Helpdesk lên Senior System Administrator.
-- Những kỹ năng cần thiết trong lĩnh vực System Administration và Cloud.
-- Tầm quan trọng của việc tự học và tích lũy kinh nghiệm thực tế.
+#### 4. Hành trình từ Sinh viên đến AWS Partner & Cộng đồng AWS Student Builder Group
+- **8 bước phát triển:** 
+Student Curiosity → First Cloud Journey → Workshop & Community → Hands-on Labs → School Projects → Portfolio → AWS Partner → Share Back.
+- **Cộng đồng AWS Student Builder Group:** Giới thiệu các chương trình hỗ trợ sinh viên, quyền lợi nhận AWS Credits, Swag, Voucher thi chứng chỉ AWS và tham gia các sự kiện chuyên ngành (AWS Community Day).
 
 ---
 
-### Những Gì Học Được
+### Kết quả đạt được
 
-#### Kiến thức kỹ thuật
+#### Tư Duy Định Hướng Sự Nghiệp
+- **Chủ động trong học tập:** Chuyển dịch từ thế thụ động (Follower) sang tư duy giải quyết vấn đề (Problem Solver) và tư duy hệ thống toàn cảnh (System Thinker).
+- **Giá trị của nền tảng:** Công cụ công nghệ thay đổi liên tục, nhưng kiến thức nền tảng (Linux, Networking, Data, System Design) mới là cốt lõi lâu dài.
+- **Thực hành đòn bẩy AI:** Tận dụng AI để tăng tốc công việc thay vì phụ thuộc hoàn toàn khiến tư duy bị thụ động.
 
-- Hiểu rõ hơn về công nghệ Docker và Containerization.
-- Biết thêm về AWS WAF và các giải pháp bảo mật trên AWS.
-- Tiếp cận Graph Database thông qua Amazon Neptune.
-- Tìm hiểu kiến trúc Multiplayer trên nền tảng AWS.
-
-#### Kỹ năng mềm
-
-- Nhận thức rõ hơn về vai trò của giao tiếp và làm việc nhóm.
-- Hiểu tầm quan trọng của việc chia sẻ kiến thức trong cộng đồng.
-- Học hỏi kinh nghiệm thực tế từ các diễn giả.
-
-#### Định hướng nghề nghiệp
-
-- Có thêm góc nhìn về các vị trí nghề nghiệp trong lĩnh vực CNTT.
-- Xây dựng kế hoạch học tập dài hạn theo định hướng Cloud Engineer.
-- Hiểu rằng việc học tập liên tục là yếu tố quan trọng để phát triển sự nghiệp.
+#### Kiến Trúc Kỹ Thuật & Thực Chiến
+- **Thiết kế kiến trúc chịu tải:** Nắm vững cách tách biệt luồng xử lý (Read/Write path), đưa bảo mật và cache ra mép mạng (Defense at the Edge).
+- **Ứng dụng dịch vụ Cloud linh hoạt:** Hiểu cách phối hợp giữa Compute (Fargate/EC2), Database (DynamoDB), In-memory Cache (ElastiCache Redis) và Edge Services (CloudFront/WAF).
 
 ---
 
-### Ứng Dụng Vào Học Tập Và Dự Án
+### Ứng Dụng Vào Công Việc
 
-Sau sự kiện, mình có thể áp dụng các kiến thức đã học vào quá trình học tập và thực hiện dự án như:
-
-- Sử dụng Docker để đơn giản hóa quá trình phát triển và triển khai ứng dụng.
-- Tìm hiểu thêm về AWS WAF nhằm tăng cường bảo mật cho các ứng dụng Web.
-- Nghiên cứu Graph Database để mở rộng kiến thức về các mô hình dữ liệu.
-- Cải thiện kỹ năng làm việc nhóm trong các môn học và đồ án.
-- Tiếp tục xây dựng lộ trình học AWS và các công nghệ Cloud hiện đại.
+- **Rèn luyện tư duy System Thinking:** Áp dụng mô hình phân tích nguyên nhân gốc rễ (Root cause analysis) khi gặp sự cố hệ thống.
+- **Cải thiện kỹ năng Data/Report:** Luyện tập cách trình bày số liệu gắn liền với ngữ cảnh kinh doanh/vận hành (Data Storytelling).
+- **Thực hành thiết kế hệ thống:** Áp dụng các kiến trúc mẫu như Cache-aside, Async Queuing vào các đồ án và bài tập thiết kế phần mềm.
+- **Tham gia cộng đồng:** Đăng ký và sinh hoạt tích cực tại AWS Student Builder Group, thực hành các bài lab trên First Cloud Journey để tích lũy kinh nghiệm thực chiến.
 
 ---
 
-### Trải Nghiệm Trong Sự Kiện
+### Trải nghiệm trong event
 
-Tham gia buổi chia sẻ của **AWS Study Group** mang lại cho mình nhiều kiến thức bổ ích về công nghệ cũng như định hướng nghề nghiệp. Thay vì chỉ tập trung vào một chủ đề duy nhất, sự kiện bao gồm nhiều bài trình bày với các nội dung đa dạng, từ Docker, AWS WAF, Amazon Neptune đến kỹ năng làm việc nhóm và lộ trình phát triển nghề nghiệp trong lĩnh vực CNTT.
+Buổi Meetup **“AWS Study Group Community Sharing Session”** là một sự kiện vô cùng ý nghĩa, mang lại nhiều giá trị practical từ góc nhìn của các diễn giả dày dặn kinh nghiệm trong ngành. Một số trải nghiệm nổi bật:
 
-Điều mình ấn tượng nhất là các diễn giả không chỉ giới thiệu lý thuyết mà còn chia sẻ nhiều kinh nghiệm thực tế, giúp người tham dự hiểu rõ hơn cách áp dụng các công nghệ AWS vào những dự án thực tế. Ngoài ra, các chủ đề về kỹ năng mềm và định hướng nghề nghiệp cũng mang lại nhiều góc nhìn hữu ích cho sinh viên đang chuẩn bị bước vào môi trường làm việc chuyên nghiệp.
+#### Học hỏi từ câu chuyện thực tế
+- Lắng nghe những chia sẻ thẳng thắn về môi trường làm việc tại MNCs, giúp xóa bỏ các lầm tưởng về công việc của Data Analytics Engineer và DevOps Engineer.
+- Học hỏi được tư duy *No-Blame Culture* – một bài học văn hóa quan trọng khi làm việc nhóm và xử lý sự cố.
 
-Thông qua sự kiện, mình có thêm động lực để tiếp tục học tập, nghiên cứu AWS Cloud cũng như tham gia nhiều hoạt động của cộng đồng nhằm cập nhật kiến thức và mở rộng kinh nghiệm.
+#### Trải nghiệm phân tích kiến trúc chuyên sâu
+- Ấn tượng với phần phân tích case study URL Shortener, từ việc chỉ ra điểm yếu của mô hình đơn giản đến cách nâng cấp từng bước lên kiến trúc Cloud đáp ứng lượng truy cập lớn.
 
----
+#### Mở rộng mạng lưới kết nối
+- Được giao lưu trực tiếp với các diễn giả, anh chị đi trước và các bạn sinh viên cùng định hướng, qua đó hiểu rõ hơn về các chương trình hỗ trợ sinh viên của AWS.
 
-### Bài Học Rút Ra
+#### Một số hình ảnh khi tham gia sự kiện
+<div style="display: flex; gap: 20px;">
+  <img src="/images/4-Events/event1/1.png" alt="Sự kiện 1" style="width: 50%; height: 300px; object-fit: cover;">
+  <img src="/images/4-Events/event1/2.png" alt="Sự kiện 2" style="width: 50%; height: 300px; object-fit: cover;">
+</div>
 
-- Docker giúp triển khai ứng dụng nhanh chóng và nhất quán giữa các môi trường.
-- AWS cung cấp nhiều dịch vụ mạnh mẽ để xây dựng các hệ thống bảo mật và có khả năng mở rộng.
-- Kỹ năng làm việc nhóm và giao tiếp hiệu quả đóng vai trò quan trọng trong mọi dự án.
-- Việc học tập liên tục và chủ động tìm hiểu công nghệ mới là chìa khóa để phát triển trong lĩnh vực CNTT.
-
----
-
-### Một Số Hình Ảnh Khi Tham Gia Sự Kiện
-
-![Sự kiện](/images/4-Events/event1/event-topics.png)
-
-
-
-> Nhìn chung, sự kiện không chỉ giúp mình mở rộng kiến thức về AWS và các công nghệ hiện đại mà còn mang đến nhiều kinh nghiệm thực tế và định hướng nghề nghiệp hữu ích. Đây là một hoạt động ý nghĩa, giúp mình có thêm động lực để tiếp tục học tập, nghiên cứu và áp dụng các công nghệ AWS vào những dự án trong tương lai.
+> Tổng kết: Sự kiện đã tiếp thêm cho em nhiều động lực, củng cố định hướng nghề nghiệp rõ ràng và cung cấp những bài học kiến thức kỹ thuật lẫn kỹ năng mềm rất giá trị cho chặng đường phát triển sắp tới.

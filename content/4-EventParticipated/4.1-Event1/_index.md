@@ -1,128 +1,100 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-06-13
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
+# Summary Report: "AWS Study Group Community Sharing Session"
 
-# Summary Report: AWS Study Group Community Sharing Session
+### Purpose of the Event
 
-## Event Objectives
+- Share a realistic picture of day-to-day work, career opportunities, and development roadmaps in the fields of Cloud, DevOps, Data Analytics, and AI.
+- Introduce standard recruitment processes, core skills, and working cultures at Multinational Corporations (MNCs).
+- Analyze real-world system architectures (case study: Scalable URL Shortener) and design principles for highly scalable applications on AWS.
+- Introduce the AWS Student Builder Group community along with hands-on learning roadmaps designed specifically for students.
 
-- Learn about the latest cloud technologies and AWS services.
-- Gain practical knowledge from community speakers.
-- Explore different technical domains and career development paths.
-- Exchange experiences with AWS community members.
+### List of Speakers
 
----
-
-## Main Topics
-
-During the event, several speakers presented different technical and career-related topics, including:
-
-- **Docker – A Containerization Technology**
-- **Combining AWS WAF with Machine Learning for Cyber Attack Detection**
-- **Multiplayer in the Cloud: Connecting Godot Clients with AWS Services**
-- **Effective Teamwork**
-- **AWS Neptune for Building a Graph Knowledge Base**
-- **From IT Helpdesk to Senior Sysadmin: Self-learning Journey and Career Roadmap**
-
-Each session introduced practical experiences, implementation methods, and best practices for solving real-world problems using modern technologies.
+- **Mr. Cường Nguyễn** - Process Engineer
+- **Mr. Đạt Phạm** - Data Analytics Engineer (Kamereo / Colgate-Palmolive)
+- **Mr. Trương Hoàng Trọng** - DevOps Engineer @ Endava Vietnam
+- **Mr. Danh Hoàng Hiếu Nghị** - AI Engineer, AWS Community Builder & AWS Student Builder Group Leader
+- **Mr. Đinh Trung Kiên** - Lead Developer at Startup
+- **Mr. Nguyễn Minh Thọ** - Student
 
 ---
 
-## Key Highlights
+### Key Highlights
 
-### Docker – Containerization
+#### 1. Real-World Data Analytics Work & Culture at Multinational Corporations (MNCs)
+- **Actual Work:** Analyzing operational and business metrics (GMV, Fill Rate, Last Mile Cost), designing dashboards to track trends, detecting anomalies, and optimizing production/IoT costs in manufacturing plants.
+- **Core Skillset:** Critical thinking, communication skills, problem-solving, and particularly "Data Storytelling."
+- **5-Level Growth Model:** Follower → Learner → Problem Solver → System Thinker → Super Star.
+- **MNC Recruitment Process:** ATS Screening / Initial Interview → Competency Assessment → Technical Interview (STAR model) → Cultural Fit.
+- **Notable Corporate Culture:** *No-Blame Post-Mortem* culture (focusing on finding root causes rather than placing individual blame) and a *Caring & Inclusive* environment.
 
-- Introduction to Docker architecture.
-- Benefits of containerized applications.
-- Building portable and lightweight environments.
+#### 2. Practical Insights into DevOps Engineering
+- **Actual Work:** Far beyond writing CI/CD pipelines or managing Docker/Kubernetes, real-world DevOps involves solving 24/7 operational challenges, handling incidents, troubleshooting, maintaining environments, optimizing Cloud costs, and establishing system ownership.
+- **Fundamental Learning Roadmap:** Mastering Linux, Networking, Programming (Python/Golang), Git/CI-CD, Containers, and building practical small-scale projects.
+- **Effective DevOps Mindset:** "Tools change, Fundamentals stay" — Focus on System Thinking, automating repetitive tasks, and leveraging AI as an efficiency force multiplier.
 
-### AWS WAF & Machine Learning
+#### 3. System Design: Scalable URL Shortener on AWS
+- **Drawbacks of Traditional Systems:** Vulnerable to bottlenecks (Single Point of Failure), high read latency, and difficulty in scaling.
+- **Optimized AWS Architecture:**
+  - *Front-end & Security:* Amazon CloudFront, AWS WAF, Amazon Amplify, Route 53, Cognito.
+  - *Key Generation Service (KGS):* Pre-generating short codes and storing them in Amazon ElastiCache (Redis) allows instant URL creation while remaining collision-free.
+  - *Backend & Database:* AWS Fargate (ECS Cluster), Amazon DynamoDB, and ElastiCache Redis utilizing the Cache-aside Pattern to minimize latency.
+- **Architectural Principles Learned:** Separation of Concerns, Defense at the Edge, Pre-computation over On-demand, and Cache-aside Pattern.
 
-- Protecting web applications using AWS WAF.
-- Detecting cyber attacks with machine learning techniques.
-- Improving security through intelligent traffic analysis.
-
-### Multiplayer on AWS
-
-- Cloud architecture for multiplayer games.
-- Connecting Godot clients with AWS services.
-- Synchronizing game states through cloud infrastructure.
-
-### Effective Teamwork
-
-- Communication in software development teams.
-- Task management and collaboration.
-- Improving productivity through teamwork.
-
-### AWS Neptune
-
-- Introduction to graph databases.
-- Building knowledge graphs using Amazon Neptune.
-- Practical applications of graph databases.
-
-### Career Development
-
-- Career roadmap from IT Helpdesk to Senior Sysadmin.
-- Importance of continuous self-learning.
-- Skills required for cloud and infrastructure engineers.
+#### 4. The Journey from Student to AWS Partner & AWS Student Builder Group
+- **8 Growth Steps:** 
+Student Curiosity → First Cloud Journey → Workshop & Community → Hands-on Labs → School Projects → Portfolio → AWS Partner → Share Back.
+- **AWS Student Builder Group Community:** Overview of student support programs, benefits including AWS Credits, Swag, AWS certification exam vouchers, and opportunities to attend specialized events (such as AWS Community Day).
 
 ---
 
-## Key Takeaways
+### Key Takeaways
 
-### Technical Knowledge
+#### Career Orientation & Mindset
+- **Proactive Learning:** Shifting from a passive approach (Follower) toward a problem-solving mindset (Problem Solver) and holistic view (System Thinker).
+- **The Value of Fundamentals:** While tech tools evolve constantly, core knowledge (Linux, Networking, Data, System Design) remains the long-term foundation.
+- **Leveraging AI Effectively:** Utilizing AI to accelerate productivity rather than relying on it blindly, which stifles critical thinking.
 
-- Better understanding of Docker and container technologies.
-- Introduction to AWS security services and graph databases.
-- Practical cloud architectures for modern applications.
-
-### Professional Skills
-
-- Importance of teamwork and communication.
-- Continuous learning is essential for career growth.
-- Real-world experience complements theoretical knowledge.
-
-### Personal Development
-
-- Understanding different career paths in IT.
-- Motivation to continue learning AWS Cloud technologies.
-- Better awareness of industry trends and best practices.
+#### Technical & Practical Architecture
+- **Designing High-Load Architectures:** Mastering the separation of execution paths (Read/Write path) and pushing security and caching to the network edge (Defense at the Edge).
+- **Flexible Cloud Service Integration:** Understanding how to coordinate Compute (Fargate/EC2), Databases (DynamoDB), In-memory Caching (ElastiCache Redis), and Edge Services (CloudFront/WAF).
 
 ---
 
-## Applying to Work
+### Practical Applications
 
-Knowledge gained from this event can be applied in several areas:
-
-- Using Docker to simplify application deployment.
-- Applying AWS security services in cloud projects.
-- Learning graph databases for future data-intensive applications.
-- Improving teamwork during software development projects.
-- Building a long-term learning roadmap toward cloud engineering.
+- **Applying System Thinking:** Implementing Root Cause Analysis methods when troubleshooting system incidents.
+- **Enhancing Data/Reporting Skills:** Practicing data presentation tied directly to business and operational contexts (Data Storytelling).
+- **System Design Practice:** Applying architectural patterns like Cache-aside and Async Queues to academic software design projects.
+- **Community Engagement:** Joining and actively participating in the AWS Student Builder Group, completing hands-on labs on the First Cloud Journey platform to build practical experience.
 
 ---
 
-## Event Experience
+### Event Experience
 
-Participating in the AWS Study Group Community Sharing Session was a valuable learning experience. The event covered various technical topics instead of focusing on a single AWS service, allowing participants to broaden their knowledge across multiple domains.
+The **“AWS Study Group Community Sharing Session”** meetup was an incredibly meaningful event that provided immense practical value through the perspectives of seasoned industry speakers. Key highlights include:
 
-I particularly enjoyed the cloud-related presentations because they were closely related to my current AWS learning journey. The speakers shared practical experiences, real-world case studies, and useful recommendations for students preparing for careers in cloud computing.
+#### Learning from Real Stories
+- Listening to candid discussions about working in MNC environments, which dispelled common misconceptions about the roles of Data Analytics Engineers and DevOps Engineers.
+- Learning about the *No-Blame Culture* — an essential cultural insight for teamwork and incident response.
 
-The event also provided opportunities to discover new technologies, learn from experienced engineers, and better understand current industry practices.
+#### In-Depth Architectural Analysis
+- Impressed by the URL Shortener case study, which clearly demonstrated the flaws of a naive model and guided the step-by-step evolution to a high-concurrency Cloud architecture.
 
----
+#### Expanding Professional Networks
+- Interacting directly with speakers, senior engineers, and peers with shared interests, leading to a clearer understanding of AWS student support initiatives.
 
-## Event Photos
+#### Event Photos
+<div style="display: flex; gap: 20px;">
+  <img src="/images/4-Events/event1/1.png" alt="Sự kiện 1" style="width: 50%; height: 300px; object-fit: cover;">
+  <img src="/images/4-Events/event1/2.png" alt="Sự kiện 2" style="width: 50%; height: 300px; object-fit: cover;">
+</div>
 
-![AWS Study Group Event](/images/4-Events/event1/event-topics.png)
-
-*Additional screenshots or photos can be added here.*
-
----
-
-> Overall, this event expanded my technical knowledge, introduced several modern technologies, and motivated me to continue developing my cloud computing and software engineering skills.
+> Summary: The event served as a strong source of motivation, providing clear career guidance and delivering actionable technical and soft skill lessons for my future growth.

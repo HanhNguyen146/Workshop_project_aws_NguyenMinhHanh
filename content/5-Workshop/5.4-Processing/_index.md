@@ -46,9 +46,9 @@ Open a Terminal and run the following command:
 **Console Output Upon Completion:**
 
 ```text
-🚀 Submitting SageMaker Processing Job...
+Submitting SageMaker Processing Job...
 ...
-✅ Processing Job complete!
+Processing Job complete!
  Processed : s3://amznce23/T1_AD/data/processed/
  Train     : s3://amznce23/T1_AD/data/features/train/
  Test      : s3://amznce23/T1_AD/data/features/test/

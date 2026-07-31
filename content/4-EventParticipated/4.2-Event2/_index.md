@@ -1,150 +1,81 @@
 ---
 title: "Event 2"
-date: 2024-01-01
+date: 2026-06-20
 weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
+# Summary Report: "Cloud Architect Competition"
 
+### Purpose of the Event
 
-# Summary Report: Cloud Architect Competition
+- Create a vibrant learning, competitive, and networking environment for members passionate about cloud computing.
+- Evaluate, reinforce, and expand practical knowledge of Cloud Computing and AWS ecosystem services.
+- Practice teamwork skills, architectural analytical thinking, and quick problem-solving reflection under time pressure.
+- Foster a proactive learning spirit and community networking among students sharing technical career paths.
 
-### Event Objectives
+### Competition Rules
 
-- Reinforce fundamental AWS Cloud knowledge through a competitive format.
-- Develop cloud architecture design and problem-solving skills.
-- Improve teamwork and communication under time constraints.
-- Encourage participants to apply AWS best practices in practical scenarios.
-
-### Competition Format
-
-The Cloud Architect event was organized as a team-based competition.
-
-- **8 teams**, each consisting of **5 members**.
-- Two teams competed head-to-head by answering AWS-related questions.
-- Questions ranged from basic to advanced difficulty.
-- The team with the higher score advanced to the next round.
-- In the event of a tie, an additional tie-breaker question determined the winner.
-
-Each team was also provided with two special abilities:
-
-- **Minimum Risk:** If the answer is incorrect, no points are deducted; if correct, only half of the question's points are awarded.
-- **Hope Star:** Correct answers receive double points, while incorrect answers result in double point deductions.
+- **Format:** Direct team-versus-team competition.
+- **Round Structure:** 
+  - Two teams take turns answering 10 questions with increasing difficulty levels from easy to hard.
+  - Topics center around core Cloud Computing concepts, AWS service ecosystems, and optimal system architecture design principles.
+  - The team with the higher total score advances to the next round.
+- **Tie-breaker / Sudden Death:** In the event of a tie score after the 10 main questions, a tie-breaker question is presented. The team that buzzes in fastest and answers correctly secures the final victory.
 
 ---
 
-### Key Highlights
+### Key Technical Focus Areas
 
-#### AWS Core Services
+#### 1. Cloud Computing Overview & Core Infrastructure
+- Fundamental concepts of IaaS, PaaS, SaaS, and the AWS global infrastructure model (Regions, Availability Zones, Edge Locations).
+- Requirement analysis techniques to select appropriate deployment models (Public, Private, Hybrid Cloud).
 
-Participants answered questions related to the fundamental AWS services, including:
+#### 2. Architecture & Essential AWS Services
+- **Compute & Networking:** Applying and distinguishing between virtual servers (Amazon EC2), VPC, Subnets, Route Tables, Internet Gateways, and Security Groups.
+- **Storage & Database:** Key differences and optimal use cases for Amazon S3, EBS, EFS, as well as database engines like Amazon RDS and DynamoDB.
+- **Security & IAM:** Least privilege principle and the AWS Shared Responsibility Model.
 
-- Amazon EC2
-- Amazon S3
-- AWS Lambda
-- Amazon VPC
-- Amazon RDS
-- Amazon DynamoDB
-- Amazon CloudWatch
-- AWS IAM
-
-#### Cloud Architecture Design
-
-Several questions required participants to:
-
-- Select the appropriate AWS services for different business scenarios.
-- Design highly available and scalable cloud architectures.
-- Compare multiple AWS solutions based on performance and cost.
-
-#### Security Best Practices
-
-Topics included:
-
-- IAM Users, Roles, and Policies
-- Security Groups
-- Network ACLs
-- AWS Shared Responsibility Model
-
-#### Cost Optimization
-
-Questions focused on:
-
-- Choosing cost-effective AWS services.
-- Understanding pricing models.
-- Applying AWS cost optimization best practices.
-
-#### Team Collaboration
-
-Since answers had to be provided within a limited time, effective communication and teamwork were essential throughout the competition.
+#### 3. AWS Well-Architected Framework
+- Analyzing and designing system solutions that align with core pillars: Cost Optimization, Performance Efficiency, Reliability (Fault Tolerance & High Availability), Security, and Operational Excellence.
 
 ---
 
-### Key Takeaways
+### Key Takeaways (Results Achieved)
 
-#### AWS Knowledge
+#### Reinforcement of Technical Knowledge
+- Systematized theoretical and practical knowledge regarding Cloud Computing and core AWS services.
+- Enhanced system architecture analytical thinking by solving real-world scenario-based competition questions.
 
-- Improved understanding of core AWS services and their use cases.
-- Reinforced cloud architecture concepts through practical questions.
-- Better understanding of selecting appropriate AWS services for different workloads.
-
-#### Problem-Solving Skills
-
-- Learned to analyze cloud architecture scenarios quickly.
-- Improved decision-making under time pressure.
-- Balanced cost, performance, scalability, and security when selecting solutions.
-
-#### Teamwork
-
-- Strengthened communication among team members.
-- Practiced collaborative decision-making.
-- Learned the importance of assigning responsibilities based on each member's strengths.
+#### Soft Skills & Quick Reflexes
+- **Teamwork Skills:** Practiced rapid communication, reaching consensus, and dividing analytical tasks effectively with teammates under time constraints.
+- **Reflexes & Critical Thinking:** Improved the speed of problem analysis, eliminating distractor options, and making accurate decisions quickly.
+- **Confidence:** Boosted self-confidence when discussing, presenting, and debating technical topics related to Cloud Computing.
 
 ---
 
-### Applying to Work
+### Practical Applications
 
-- Apply AWS architectural best practices when designing cloud solutions.
-- Select appropriate AWS services based on application requirements.
-- Improve cloud cost optimization in future projects.
-- Enhance teamwork and technical discussion during software development projects.
-- Continue preparing for AWS Certification examinations.
+- **Application in Academic & Real Projects:** Utilizing standardized architectural design principles to build cost-effective and scalable Cloud infrastructures for course projects.
+- **Preparation for AWS Certifications:** Leveraging the question bank and scenarios from the competition as practical review materials for certification exams like AWS Certified Cloud Practitioner or AWS Certified Solutions Architect - Associate.
+- **Sustaining Community Learning:** Continuing to actively connect and learn from other event participants to drive mutual professional growth.
 
 ---
 
 ### Event Experience
 
-Participating in the **Cloud Architect Competition** was both exciting and educational. Unlike traditional seminars, the event encouraged participants to actively apply their AWS knowledge through real-time problem solving.
+The **“Cloud Architect Competition”** delivered an energetic, intense, and highly educational atmosphere:
 
-#### Technical Challenges
+#### Competitive Spirit & Excitement
+- The competitive atmosphere between teams was dynamic and engaging. Intensity peaked during high-difficulty questions and reached a climax during the decisive tie-breaker question when teams were tied.
+- Experienced fast-paced thinking and seamless coordination with teammates to deliver accurate answers in short timeframes.
 
-- Answered questions covering compute, storage, networking, databases, security, and monitoring services.
-- Applied AWS architectural knowledge to practical scenarios.
-- Reviewed many core AWS concepts through interactive challenges.
+#### Networking & Knowledge Sharing
+- Had the opportunity to engage and exchange technical perspectives with many talented fellow students.
+- Learned valuable analytical shortcuts and unique approaches to architectural problems from opposing teams.
 
-#### Team Collaboration
+#### Event Photo
+![Event](/images/4-Events/event2/6C7A6809.JPG)
 
-- Worked closely with teammates to analyze each question.
-- Shared different perspectives before selecting the final answer.
-- Experienced the importance of communication and teamwork under time pressure.
-
-#### Practical Learning
-
-- Strengthened understanding of AWS services through competition.
-- Identified areas requiring further study and improvement.
-- Gained confidence in solving cloud architecture problems.
-
-#### Lessons Learned
-
-- Understanding AWS fundamentals is essential before designing cloud architectures.
-- Cloud solutions should balance performance, scalability, security, and cost.
-- Team collaboration significantly improves decision-making quality.
-- Continuous practice through competitions is an effective way to reinforce AWS knowledge.
-
-#### Some Event Photos
-
-![Cloud Architect Competition](/images/4-Events/event2/competition.png)
-
-![Team Discussion](/images/4-Events/event2/team.png)
-
-> Overall, the Cloud Architect Competition provided an engaging way to review AWS concepts while improving cloud architecture thinking, teamwork, and problem-solving skills. The competition also motivated me to continue learning AWS services and preparing for more advanced cloud certifications and real-world projects.
+> Summary: The Cloud Architect Competition was not only an exciting intellectual arena but also a fantastic opportunity to solidify technical foundations, refine teamwork abilities, and gain further inspiration to pursue a career in Cloud and DevOps.

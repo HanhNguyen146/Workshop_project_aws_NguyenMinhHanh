@@ -6,25 +6,26 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
+**Week 1:** [Getting familiar with AWS and its basic services](1.1-week1/)
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+**Week 2:** [Testing and comparing local machine learning algorithms](1.2-week2/)
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+**Week 3:** [Structuring the model training source code](1.3-week3/)
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-Week1/)
+**Week 4:** [Programming automated training scripts](1.4-week4/)
 
-**Week 2:** [Data Preprocessing and Feature Engineering](1.2-Week2/)
+**Week 5:** [Cloud training and hyperparameter optimization](1.5-week5/)
 
-**Week 3:** [Local Machine Learning Model Development](1.3-Week3/)
+**Week 6:** [Building model performance evaluation scripts](1.6-week6/)
 
-**Week 4:** [Model Evaluation and Hyperparameter Optimization](1.4-Week4/)
+**Week 7:** [Configuring model registry and version management](1.7-week7/)
 
-**Week 5:** [Model Training on Amazon SageMaker](1.5-Week5/)
+**Week 8:** [Analyzing experimental results and finalizing technical reports](1.8-week8/)
 
-**Week 6:** [Deploying the SageMaker Endpoint and Building the Prediction Service](1.6-Week6/)
+<!-- **Week 9:** [Doing work I...](1.9-week9/)
 
-**Week 7:** [System Integration and End-to-End Testing](1.7-Week7/)
+**Week 10:** [Doing work L...](1.10-week10/)
 
-**Week 8:** [System Monitoring, Documentation, and Project Finalization](1.8-Week8/)
+**Week 11:** [Doing work M...](1.11-week11/)
 
-
+**Week 12:** [Doing work N...](1.12-week12/) -->

@@ -1,29 +1,25 @@
 ---
 title: "Workshop"
-date: 2026-07-22
+date: 2024-01-01
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
+# Deploying an MLOps System for SCADA Anomaly Detection on AWS
 
-# SCADA Fault Prediction Platform using Amazon SageMaker
+In this workshop section, our team will provide a detailed guide on how to deploy an end-to-end Machine Learning Operations (MLOps) system on the AWS platform to solve the problem of anomaly detection from SCADA sensor data.
 
-#### Overview
-
-Amazon SageMaker is a fully managed machine learning service that enables developers and data scientists to build, train, deploy, and monitor machine learning models at scale. Combined with other AWS services such as Amazon S3, AWS Lambda, Amazon API Gateway, Amazon CloudWatch, and Amazon SNS, it provides a complete MLOps workflow with minimal infrastructure management.
-
-In this workshop, you will learn how to build an end-to-end fault prediction system for industrial SCADA data using the public SKAB (Skoltech Anomaly Benchmark) dataset. You will upload datasets to Amazon S3, preprocess data using SageMaker Processing Jobs, train an XGBoost model, deploy a real-time SageMaker Endpoint, invoke predictions through an API, and monitor the deployed model using CloudWatch and SNS.
-
-This workshop demonstrates the complete lifecycle of a machine learning application, from data preparation to production deployment and monitoring.
+The project architecture replaces manual operations by automating the machine learning lifecycle: from setting up data storage (Amazon S3) and security authorization (AWS IAM), to training and managing models (Amazon SageMaker), as well as monitoring (Amazon CloudWatch) and setting up automated alerts (Amazon SNS).
 
 #### Content
 
-1. [Overview](5.1-Overview/)
-2. [Prerequisites](5.2-Prerequisites/)
-3. [Train XGBoost Model](5.3-Training/)
-4. [Deploy SageMaker Endpoint](5.4-Deployment/)
-5. [Invoke Endpoint](5.5-Invoke/)
-6. [Monitor Endpoint with CloudWatch](5.6-CloudWatch/)
-7. [Create SNS Notification (Bonus)](5.7-SNS/)
-8. [Clean Up](5.8-Cleanup/)
+1. [Workshop Overview](5.1-Workshop-overview/)
+2. [Prerequisites](5.2-Prerequiste/)
+3. [Upload Data to Amazon S3](5.3-Upload-S3/)
+4. [Data Preprocessing with SageMaker](5.4-Processing/)
+5. [Model Training and Management](5.5-SageMaker/)
+6. [Monitor Endpoint with CloudWatch](5.6-Monitor-CloudWatch/)
+7. [Create SNS Notification](5.7-Create-SNS-Notification/)
+8. [Set up IAM Policy](5.8-Policy/)
+9. [Resource Cleanup](5.9-Cleanup/)

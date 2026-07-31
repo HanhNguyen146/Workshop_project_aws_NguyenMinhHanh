@@ -6,16 +6,13 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
+This chapter compiles the technical articles (blogs) that our team has contributed and shared with the [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj) community. The objective of these posts is to summarize practical knowledge and spread academic value to cloud computing enthusiasts.
 
+###  [Blog 1 - SESSION POLICIES IN AMAZON EKS POD IDENTITY](3.1-Blog1/)
+This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
 
-
-###  [Blog 1 - Deploying and Monitoring Machine Learning Models using SageMaker Endpoint, CloudWatch, and SNS](3.1-Blog1/)
-This blog explains how Amazon SageMaker Endpoint, Amazon CloudWatch, and Amazon SNS can be combined to deploy, monitor, and maintain machine learning models in production. It introduces the workflow of real-time inference using SageMaker Endpoints, performance monitoring with CloudWatch metrics and alarms, and automatic notifications through Amazon SNS to ensure model reliability, availability, and operational efficiency.
-
-### [Blog 2 - Monitoring Amazon SageMaker Endpoints with Amazon CloudWatch](3.2-Blog2/)
-
-This blog introduces Amazon CloudWatch and its integration with Amazon SageMaker for monitoring deployed machine learning endpoints. It explains how CloudWatch collects metrics and logs, creates alarms based on configurable thresholds, and works with Amazon SNS to send automatic notifications. These monitoring capabilities help improve endpoint reliability, simplify troubleshooting, and ensure stable real-time inference in production environments.
+### [Blog 2 - AWS Service Prioritization Strategy for AI / MLOPS engineer](3.2-Blog2/)
+This article analyzes and proposes a strategic approach to learning AWS services for AI/MLOps engineers. The content is logically structured into 4 architectural layers: Storage & Security, MLOps & Training, Deployment, and Monitoring. It helps learners transition from using local environments to building standardized MLOps workflows on the cloud.
 
 ### [Blog 3 - Building an End-to-End Machine Learning Pipeline with Amazon SageMaker](3.3-Blog3/)
-
-Blog này trình bày cách xây dựng quy trình Machine Learning end-to-end trên AWS bằng Amazon SageMaker. Nội dung bao gồm các bước chuẩn bị dữ liệu, huấn luyện mô hình XGBoost, triển khai Endpoint, thực hiện dự đoán thời gian thực và giám sát hệ thống bằng Amazon CloudWatch. Qua đó, người đọc có thể hiểu cách triển khai một workflow Machine Learning hoàn chỉnh trên nền tảng AWS.
+This blog introduces the process of building a complete Machine Learning pipeline on Amazon SageMaker, from data storage on Amazon S3, data preprocessing, model training, and Endpoint deployment to monitoring with Amazon CloudWatch. The article provides an overview of how AWS services coordinate to deploy and operate a Machine Learning system in a Production environment.

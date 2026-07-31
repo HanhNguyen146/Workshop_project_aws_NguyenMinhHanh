@@ -1,65 +1,50 @@
 ---
-title: "Chia sẻ và phản hồi"
-date: 2024-01-01
+title: "Chia sẻ, đóng góp ý kiến"
+date: 2026-07-30
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
+### Đánh giá chung
 
+**1. Môi trường làm việc**  
+Chương trình First Cloud AI Journey (FCAJ) đã mang lại một môi trường thực hành đám mây (Cloud) chuyên nghiệp và năng động. Việc được tiếp cận trực tiếp với hệ sinh thái AWS giúp em làm quen với nhịp độ công việc thực tế của một Kỹ sư MLOps. Không gian làm việc nhóm và các công cụ hỗ trợ luôn hoạt động trơn tru, giúp em dễ dàng thảo luận các vấn đề kỹ thuật với mọi người.
 
-Sau quá trình tham gia chương trình **First Cloud AI Journey (FCAJ)**, tôi đã có cơ hội tiếp cận với môi trường học tập và thực hành chuyên nghiệp, đồng thời được tham gia phát triển một dự án thực tế về **SCADA Fault Prediction Platform** trên nền tảng Amazon Web Services (AWS). Đây là khoảng thời gian giúp tôi không chỉ củng cố kiến thức chuyên môn mà còn phát triển nhiều kỹ năng cần thiết cho công việc trong tương lai.
+**2. Sự hỗ trợ của mentor / team admin**  
+Em cực kỳ ấn tượng với sự hỗ trợ nhiệt tình từ các Mentor. Khi gặp khó khăn trong việc xử lý mất cân bằng nhãn cho tập dữ liệu SCADA hay cấu hình phân quyền IAM Role cho SageMaker, các anh không chỉ gợi ý sử dụng tham số `scale_pos_weight` mà còn giải thích rất cặn kẽ về bản chất toán học cũng như cách luồng dữ liệu hoạt động trên AWS. Các anh chị admin cũng rất sát sao trong việc nhắc nhở tiến độ và cung cấp tài liệu kịp thời.
 
-## Đánh giá chung
+**3. Sự phù hợp giữa công việc và chuyên ngành học**  
+Dự án "Phát hiện dị thường từ dữ liệu SCADA bằng MLOps" hoàn toàn trùng khớp với định hướng chuyên ngành Trí tuệ Nhân tạo / Khoa học Dữ liệu mà em đang theo đuổi. Những kiến thức hàn lâm ở trường về thuật toán XGBoost hay Data Preprocessing (ví dụ: biến đổi góc gió bằng lượng giác, bảo toàn outlier) nay được đặt vào một quy trình kỹ thuật nghiêm ngặt trên nền tảng Amazon SageMaker, giúp em hiểu rõ vòng đời thực tế của một mô hình học máy.
 
-### 1. Môi trường học tập và làm việc
+**4. Cơ hội học hỏi & phát triển kỹ năng**  
+Thông qua FCAJ, em đã rèn luyện được rất nhiều kỹ năng cốt lõi:
+- **Kỹ năng Cloud Computing:** Làm chủ các dịch vụ AWS như S3 (Data Lake), IAM (Bảo mật), và SageMaker (Huấn luyện, HPO, Model Registry).
+- **Kỹ năng Data Science:** Tiền xử lý dữ liệu cảm biến IoT/SCADA (xử lý Label_Error, time-series lag) và xây dựng kịch bản kiểm thử (Data Validation), tối ưu hóa siêu tham số tự động.
+- **Kỹ năng làm việc nhóm & Giải quyết vấn đề:** Biết cách đọc log từ CloudWatch để debug lỗi và phối hợp công việc khi triển khai kiến trúc hệ thống.
 
-Chương trình mang đến một môi trường học tập thân thiện, chuyên nghiệp và luôn khuyến khích tinh thần tự học. Các nội dung được xây dựng theo lộ trình rõ ràng, từ kiến thức cơ bản đến các bài thực hành thực tế, giúp tôi từng bước làm quen với các dịch vụ AWS và quy trình phát triển một hệ thống Machine Learning hoàn chỉnh.
+**5. Văn hóa & tinh thần đồng đội**  
+Tinh thần đồng đội trong nhóm em rất tuyệt vời. Khi có lỗi về nhãn `Label_Error` bị biến đổi khi scale (như bạn Chương gặp phải), hay khi pipeline tiền xử lý cần bổ sung kịch bản kiểm thử dữ liệu (phần em phụ trách), mọi người đều xúm lại tìm cách giải quyết. Sự gắn kết và tinh thần "cùng tiến" luôn được duy trì ở mức cao nhất.
 
-### 2. Sự hỗ trợ từ Mentor
+**6. Chính sách / phúc lợi cho thực tập sinh**  
+Chương trình cung cấp tài khoản thực hành AWS giúp sinh viên chúng em thoải mái triển khai kiến trúc mà không lo lắng về rào cản chi phí (Cloud Billing). Các buổi chia sẻ, workshop nội bộ được tổ chức bài bản, thực tế và mang tính ứng dụng rất cao.
 
-Các Mentor luôn nhiệt tình hướng dẫn và sẵn sàng giải đáp những khó khăn trong quá trình thực hiện dự án. Thay vì đưa ra lời giải ngay lập tức, Mentor thường định hướng cách tiếp cận và khuyến khích tôi tự tìm hiểu, từ đó giúp tôi rèn luyện khả năng tư duy và giải quyết vấn đề.
+### Một số câu hỏi khác
 
-### 3. Trải nghiệm thực hiện dự án
+- **Điều bạn hài lòng nhất trong thời gian thực tập?**  
+  Điều em tự hào nhất là đã tự tay triển khai thành công một kiến trúc End-to-End MLOps lên đám mây AWS thay vì chỉ chạy code trên máy tính cá nhân. Nhìn thấy mô hình tự động lấy dữ liệu từ S3, tự động tuning (HPO), và lưu trữ vào Model Registry mang lại một cảm giác rất "thành tựu".
 
-Được tham gia xây dựng hệ thống **SCADA Fault Prediction Platform** là một trải nghiệm rất ý nghĩa. Tôi có cơ hội thực hành toàn bộ quy trình phát triển một dự án Machine Learning trên nền tảng AWS, từ xử lý dữ liệu, huấn luyện mô hình, triển khai Amazon SageMaker Endpoint đến giám sát hệ thống bằng Amazon CloudWatch và Amazon SNS.
+- **Điều bạn nghĩ công ty cần cải thiện cho các thực tập sinh sau?**  
+  Em hy vọng chương trình có thể bổ sung thêm một số buổi thực hành về cách theo dõi hiệu suất mô hình sau khi Deploy (ví dụ: xử lý Data Drift / Model Drift với SageMaker Model Monitor), vì đây cũng là một phần rất thực tế và quan trọng trong MLOps.
 
-### 4. Kiến thức và kỹ năng đạt được
+- **Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?**  
+  Chắc chắn là CÓ! Đây là bước đệm hoàn hảo để thu hẹp khoảng cách giữa lý thuyết Machine Learning ở trường đại học và kỹ năng vận hành mà các công ty công nghệ lớn đang yêu cầu.
 
-Sau thời gian thực tập, tôi đã nâng cao được nhiều kiến thức và kỹ năng như:
+### Đề xuất & mong muốn
 
-- Hiểu rõ hơn về các dịch vụ AWS, đặc biệt là Amazon SageMaker, Amazon S3, Amazon CloudWatch và Amazon SNS.
-- Nắm được quy trình triển khai một mô hình Machine Learning trên nền tảng Cloud.
-- Cải thiện kỹ năng lập trình Python và xử lý dữ liệu.
-- Rèn luyện kỹ năng viết tài liệu kỹ thuật và xây dựng Workshop.
-- Phát triển kỹ năng làm việc nhóm, giao tiếp, quản lý thời gian và tự nghiên cứu tài liệu.
-
-### 5. Hoạt động đào tạo và chia sẻ
-
-Bên cạnh các nội dung chuyên môn, chương trình còn tổ chức nhiều buổi Workshop và Seminar chia sẻ kinh nghiệm từ Mentor cũng như các anh chị đã tham gia các dự án và cuộc thi công nghệ. Những buổi chia sẻ này giúp tôi có thêm góc nhìn thực tế về quá trình phát triển sản phẩm, làm việc nhóm và định hướng nghề nghiệp trong lĩnh vực Cloud Computing và Trí tuệ nhân tạo.
-
----
-
-# Cảm nhận cá nhân
-
-## Điều tôi hài lòng nhất
-
-Điều tôi hài lòng nhất là được trực tiếp xây dựng và triển khai một hệ thống Machine Learning hoàn chỉnh trên AWS thay vì chỉ dừng lại ở việc huấn luyện mô hình trên máy tính cá nhân. Điều này giúp tôi hiểu rõ hơn về quy trình triển khai thực tế cũng như cách các dịch vụ AWS được kết hợp để xây dựng một hệ thống hoàn chỉnh.
-
-## Đề xuất cải thiện
-
-Để chương trình ngày càng hoàn thiện hơn, theo tôi có thể xem xét:
-
-- Tổ chức thêm các buổi chia sẻ chuyên sâu về MLOps và triển khai hệ thống trong môi trường Production.
-- Tăng cường các buổi chia sẻ kinh nghiệm từ các khóa thực tập trước hoặc các đội thi Hackathon.
-- Tổ chức thêm các dự án nhóm nhỏ để học viên có nhiều cơ hội rèn luyện kỹ năng làm việc nhóm.
-
-## Có sẵn sàng giới thiệu chương trình cho người khác không?
-
-Tôi sẵn sàng giới thiệu chương trình **First Cloud AI Journey** cho các bạn sinh viên quan tâm đến Cloud Computing, Machine Learning và Trí tuệ nhân tạo. Chương trình có lộ trình học tập rõ ràng, nhiều nội dung thực hành và tạo điều kiện để học viên áp dụng kiến thức vào các dự án thực tế.
-
----
-
-# Kết luận
-
-Kỳ thực tập là một trải nghiệm học tập vô cùng ý nghĩa đối với tôi. Thông qua chương trình, tôi không chỉ tích lũy thêm kiến thức chuyên môn về AWS và Machine Learning mà còn phát triển nhiều kỹ năng mềm cần thiết trong môi trường làm việc chuyên nghiệp. Tôi xin chân thành cảm ơn các Mentor cùng đội ngũ **First Cloud AI Journey** đã luôn hỗ trợ và tạo điều kiện để tôi hoàn thành dự án cũng như có thêm nhiều kinh nghiệm quý báu cho định hướng nghề nghiệp trong tương lai.
+- **Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?**  
+  Mong chương trình FCAJ có hỗ trợ thêm về phần cứng như các IoT Gateway hoặc vi điều khiển tại biên (Edge) để giả lập việc thu thập và đẩy luồng dữ liệu thời gian thực lên Amazon S3. Điều này sẽ hoàn thiện một bức tranh MLOps công nghiệp toàn diện từ thiết bị đến đám mây.
+- **Bạn có muốn tiếp tục chương trình này trong tương lai?**  
+  Em rất mong muốn được tiếp tục đồng hành cùng chương trình, có thể ở các dự án nâng cấp thêm luồng CI/CD (như SageMaker Pipelines) hoặc với vai trò hỗ trợ các bạn khóa sau.
+- **Góp ý khác (tự do chia sẻ):**  
+  Cảm ơn đội ngũ FCAJ, Mentor và các anh chị admin đã tạo ra một sân chơi công nghệ vô cùng chất lượng và ý nghĩa!

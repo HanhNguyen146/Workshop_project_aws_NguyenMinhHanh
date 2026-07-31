@@ -1,121 +1,54 @@
 ---
 title: "Blog 2"
-date: 2026-07-26
+date: 2026-07-31
 weight: 2
-draft: false
+chapter: false
 pre: " <b> 3.2. </b> "
-
----
-# Giám sát SageMaker Endpoint với Amazon CloudWatch
-
-Việc triển khai một mô hình Machine Learning chỉ là bước khởi đầu trong vòng đời của hệ thống. Sau khi mô hình được triển khai dưới dạng **Amazon SageMaker Endpoint**, việc giám sát liên tục là yếu tố quan trọng để đảm bảo dịch vụ suy luận (Inference) luôn hoạt động ổn định, đáng tin cậy và đạt hiệu năng cao.
-
-**Amazon CloudWatch** là dịch vụ giám sát mặc định của AWS, cho phép thu thập, lưu trữ và phân tích **Metrics**, **Logs**, **Events** và **Alarms** từ các tài nguyên AWS. Khi được tích hợp với Amazon SageMaker, CloudWatch giúp theo dõi hiệu năng Endpoint theo thời gian thực, nhanh chóng phát hiện sự cố và tự động gửi cảnh báo khi hệ thống xảy ra bất thường.
-
-Kiến trúc dưới đây minh họa cách Amazon CloudWatch hoạt động cùng với Amazon SageMaker và Amazon SNS.
-
 ---
 
-## Tại sao cần giám sát SageMaker Endpoint?
+# NGĂN CHẶN HỎNG HÓC MÁY MÓC: TÍCH HỢP PHYSICAL AI TRONG BẢO TRÌ DỰ ĐOÁN
 
-Sau khi triển khai, SageMaker Endpoint sẽ liên tục tiếp nhận các yêu cầu dự đoán từ người dùng hoặc các ứng dụng khác. Nếu không có cơ chế giám sát, các vấn đề như độ trễ tăng cao, lỗi suy luận hoặc tài nguyên hệ thống bị quá tải có thể không được phát hiện kịp thời, ảnh hưởng trực tiếp đến chất lượng dịch vụ.
+## GIỚI THIỆU
 
-Amazon CloudWatch giúp người quản trị theo dõi trạng thái hoạt động của Endpoint theo thời gian thực và phát hiện sớm các dấu hiệu bất thường trước khi chúng gây ảnh hưởng đến hệ thống.
+Trong dự án phân tích dữ liệu SCADA để dự đoán lỗi tuabin gió (SCADA fault prediction), mô hình GMM (Gaussian Mixture Model) sử dụng thư viện Scikit-Learn được áp dụng để phát hiện các tín hiệu bất thường. Quá trình này thuộc phạm trù Bảo trì dự đoán (Predictive Maintenance), có vai trò ngăn chặn hỏng hóc thiết bị thông qua phân tích dữ liệu vận hành.
 
-Một số khả năng nổi bật của CloudWatch gồm:
-
-- Giám sát hiệu năng theo thời gian thực.
-- Tự động thu thập các chỉ số hoạt động (Metrics).
-- Quản lý và lưu trữ nhật ký hệ thống (Logs).
-- Tạo cảnh báo (Alarms) dựa trên các ngưỡng được cấu hình.
-- Tích hợp với Amazon SNS để gửi thông báo tự động.
+Gần đây, khái niệm Physical AI (Trí tuệ nhân tạo vật lý) đã được phát triển nhằm nâng cấp khả năng của các hệ thống công nghiệp. Dựa trên thông tin từ AWS, bài viết này trình bày khái niệm Physical AI và phương pháp ứng dụng công nghệ này vào các bài toán dự đoán tình trạng hỏng hóc máy móc.
 
 ---
 
-## Theo dõi Metrics của Endpoint
+## PHYSICAL AI VÀ SỰ KHÁC BIỆT VỚI TRADITIONAL AI
 
-Amazon SageMaker tự động gửi các chỉ số hoạt động của Endpoint đến Amazon CloudWatch.
+Physical AI là hệ thống trí tuệ nhân tạo có khả năng tương tác và thao tác trực tiếp với không gian vật lý thực tế.
 
-Một số Metrics quan trọng bao gồm:
-
-- **Invocation Count** – Số lượng yêu cầu dự đoán được gửi đến Endpoint.
-- **Model Latency** – Thời gian mô hình xử lý và trả về kết quả dự đoán.
-- **Invocation Errors** – Số lượng yêu cầu suy luận bị lỗi.
-- **CPU Utilization** – Mức sử dụng CPU của môi trường suy luận.
-- **Memory Utilization** – Mức sử dụng bộ nhớ trong quá trình thực thi mô hình.
-
-Thông qua các chỉ số này, người quản trị có thể đánh giá hiệu năng của Endpoint, theo dõi xu hướng sử dụng và phát hiện các vấn đề về tài nguyên hoặc hiệu suất.
+Đặc điểm phân biệt cơ bản: Trong khi AI truyền thống (Traditional AI) chủ yếu tập trung vào việc xử lý dữ liệu và tạo lập thông tin (văn bản, hình ảnh) trên môi trường kỹ thuật số, Physical AI cấp quyền cho các thiết bị như robot công nghiệp, hệ thống cảm biến thông minh và phương tiện tự hành khả năng nhận thức, phân tích và thực thi hành động trong các môi trường vật lý đa chiều.
 
 ---
 
-## Theo dõi Logs
+## ỨNG DỤNG CỦA PHYSICAL AI TRONG DỰ ĐOÁN HỎNG HÓC THIẾT BỊ
 
-Bên cạnh Metrics, CloudWatch còn lưu trữ toàn bộ nhật ký được tạo ra từ môi trường suy luận của SageMaker.
+Đối với bài toán dự đoán lỗi tuabin gió sử dụng dữ liệu SCADA, mô hình học máy truyền thống thường chỉ thực hiện nhiệm vụ phát hiện điểm dị thường (anomaly detection) dựa trên các chuỗi số liệu trong quá khứ.
 
-Các thông tin thường xuất hiện trong Logs bao gồm:
-
-- Thông tin khởi động Endpoint.
-- Yêu cầu dự đoán (Inference Request).
-- Kết quả dự đoán.
-- Các ngoại lệ (Exceptions) phát sinh trong quá trình xử lý.
-- Nhật ký hệ thống và Container.
-
-CloudWatch Logs giúp việc phân tích nguyên nhân lỗi, kiểm tra quá trình xử lý và gỡ lỗi ứng dụng trở nên dễ dàng hơn.
+Khi áp dụng các nguyên lý của Physical AI, hệ thống mở rộng phạm vi ra ngoài việc phân tích dữ liệu tĩnh. Thuật toán có khả năng liên kết dữ liệu cảm biến đa luồng (nhiệt độ, độ rung, áp suất) theo thời gian thực để đưa ra các dự báo cơ học về tình trạng của thiết bị. Năng lực xử lý này giúp xác định trước thời điểm linh kiện có nguy cơ hỏng hóc, hỗ trợ nhà sản xuất đưa ra các biện pháp can thiệp kịp thời, nâng cao hiệu suất hoạt động và giảm thiểu thời gian ngừng máy (downtime).
 
 ---
 
-## Tạo CloudWatch Alarm
+## KIẾN TRÚC TÍCH HỢP TRÊN HẠ TẦNG AWS
 
-CloudWatch cho phép tạo các cảnh báo dựa trên những ngưỡng được định nghĩa trước.
+Để xây dựng một hệ thống phân tích lỗi và giám sát vật lý toàn diện, hạ tầng AWS cung cấp các dịch vụ chuyên biệt với khả năng liên kết chặt chẽ:
 
-Ví dụ, có thể cấu hình Alarm khi:
-
-- Độ trễ (Model Latency) vượt quá giá trị cho phép.
-- Số lượng lỗi suy luận tăng bất thường.
-- CPU Utilization duy trì ở mức quá cao trong một khoảng thời gian.
-
-Khi điều kiện được đáp ứng, trạng thái của Alarm sẽ chuyển từ **OK** sang **ALARM**, từ đó kích hoạt các hành động đã được cấu hình.
+- **Thu thập và quản lý luồng dữ liệu**: Các dịch vụ như AWS IoT Core và AWS IoT FleetWise được sử dụng để tiếp nhận, quản lý và định tuyến luồng dữ liệu liên tục từ các cảm biến công nghiệp (IoT sensor) được gắn trên máy móc.
+- **Xử lý số liệu và Huấn luyện mô hình**: Dữ liệu IoT được lưu trữ tập trung trên điện toán đám mây. Môi trường Amazon SageMaker AI cung cấp hạ tầng để huấn luyện các mô hình dự báo nhằm nhận diện các kiểu mẫu (pattern) lỗi phức tạp.
+- **Phân tích và ra quyết định thông minh**: Việc tích hợp Amazon Bedrock và các mô hình Generative AI giúp biên dịch các dữ liệu lỗi kỹ thuật thành hệ thống cảnh báo và chỉ dẫn bảo trì bằng ngôn ngữ tự nhiên, hỗ trợ trực tiếp cho các kỹ sư vận hành tại hiện trường.
 
 ---
 
-## Tích hợp CloudWatch với Amazon SNS
+## KẾT LUẬN
 
-Một trong những tính năng hữu ích của CloudWatch là khả năng tích hợp trực tiếp với **Amazon SNS (Simple Notification Service)**.
-
-Khi Alarm được kích hoạt:
-
-1. CloudWatch phát hiện chỉ số vượt ngưỡng.
-2. Alarm chuyển sang trạng thái **ALARM**.
-3. CloudWatch gửi thông báo đến Amazon SNS Topic.
-4. Amazon SNS phân phối thông báo đến những người đã đăng ký.
-
-Amazon SNS hỗ trợ nhiều hình thức gửi thông báo như:
-
-- Email
-- SMS
-- HTTP/HTTPS Endpoint
-- AWS Lambda
-- Amazon SQS
-
-Nhờ đó, quản trị viên có thể nhanh chóng nhận được cảnh báo và xử lý sự cố kịp thời.
+Việc áp dụng các mô hình học máy để phân tích dữ liệu SCADA là quy trình cơ sở trong nghiệp vụ bảo trì dự đoán. Sự tiến hóa của Physical AI, kết hợp cùng hệ sinh thái từ AWS, tạo ra một kiến trúc hệ thống khép kín. Giải pháp này không chỉ thực hiện chức năng xử lý dữ liệu kỹ thuật số mà còn hỗ trợ trực tiếp các hoạt động bảo trì vật lý, tối ưu hóa mức độ an toàn và hiệu năng vận hành trong công nghiệp.
 
 ---
 
-## Lợi ích của Amazon CloudWatch
+## LINK BÀI VIẾT
 
-Việc sử dụng Amazon CloudWatch cùng với Amazon SageMaker mang lại nhiều lợi ích như:
-
-- Giám sát Endpoint theo thời gian thực.
-- Thu thập tập trung Metrics và Logs.
-- Phát hiện và xử lý sự cố nhanh chóng.
-- Tự động gửi cảnh báo khi có bất thường.
-- Nâng cao tính ổn định và độ sẵn sàng của hệ thống.
-- Hỗ trợ quản lý và vận hành mô hình Machine Learning trong môi trường Production hiệu quả hơn.
-
----
-
-## Kết luận
-
-Amazon CloudWatch là một thành phần không thể thiếu trong quá trình vận hành các hệ thống Machine Learning trên AWS. Bằng cách thu thập Metrics, lưu trữ Logs, tạo Alarms và tích hợp với Amazon SNS để gửi thông báo tự động, CloudWatch giúp các mô hình được triển khai trên Amazon SageMaker luôn hoạt động ổn định, dễ dàng giám sát và nhanh chóng phát hiện các sự cố phát sinh.
-
-Việc triển khai cơ chế giám sát không chỉ nâng cao độ tin cậy của hệ thống mà còn giúp giảm thời gian xử lý sự cố, tối ưu hiệu năng và đảm bảo chất lượng dịch vụ trong môi trường Production.
+[Preventing machine breakdowns: How Physical AI predicts equipment problems](https://aws.amazon.com/blogs/iot/preventing-machine-breakdowns-how-physical-ai-predicts-equipment-problems/)
+— với [Huỳnh Duy Chương](https://www.facebook.com/groups/660548818043427/user/100042156282782/) và [Trần Như Nhật Hoàng](https://www.facebook.com/groups/660548818043427/user/100050045642533/).
