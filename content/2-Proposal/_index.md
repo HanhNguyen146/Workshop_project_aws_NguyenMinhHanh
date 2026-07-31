@@ -6,8 +6,8 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-
 # SCADA Fault Prediction Platform
+
 ## An AWS SageMaker-Based Predictive Maintenance Solution
 
 ### 1. Executive Summary
@@ -44,7 +44,7 @@ Compared to manually managing the machine learning lifecycle, the proposed solut
 
 The proposed architecture follows a complete machine learning workflow. Sensor datasets are stored in Amazon S3, processed using SageMaker Processing Jobs, transformed through feature engineering, and used to train machine learning models. The best model is centrally managed in the Model Registry. From there, it can optionally be deployed to an Endpoint for testing, while CloudWatch and SNS provide automated monitoring and alerting.
 
-![SCADA System Architecture](/images/2-Proposal/scada_architecture.png)
+![SCADA System Architecture](/images/2-Proposal/architectsys.png)
 
 ### AWS Services Used
 
@@ -108,6 +108,7 @@ AWS Services:
 - **Week 6:** Explore optional SageMaker Endpoint deployment for testing and resource cleanup strategies.
 - **Week 7:** Integrate CloudWatch monitoring, create Amazon SNS notifications, and perform end-to-end MLOps workflow testing.
 - **Week 8:** Perform final system testing, clean up AWS resources, complete documentation, and prepare the final presentation.
+
 ---
 
 ### 6. Budget Estimation
