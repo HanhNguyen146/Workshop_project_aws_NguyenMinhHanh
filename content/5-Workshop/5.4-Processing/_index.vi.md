@@ -16,7 +16,9 @@ Trong dự án thực tế, dữ liệu thô (SCADA data) thường chứa nhi�
 
 ### 1. Kịch bản tiền xử lý dữ liệu (Data Engineering)
 
-Kịch bản `preprocessing.py` (chạy trên SageMaker) đóng vai trò cốt lõi trong việc "làm sạch" dữ liệu SCADA. Ở phần này, chúng ta đã áp dụng các giải pháp kỹ thuật tinh chỉnh đặc biệt phù hợp với định luật vật lý thay vì chỉ xử lý bằng thống kê thuần túy:
+Nhờ việc đã chạy kiểm tra **Data Validation** khắt khe ở bước trước (đảm bảo dữ liệu đầu vào không bị lỗi cấu trúc cơ bản, thiếu cột hay sai kiểu dữ liệu), kịch bản `preprocessing.py` (chạy trên SageMaker) giờ đây có thể tập trung hoàn toàn vào việc "làm sạch chuyên sâu" và tạo đặc trưng (Feature Engineering). 
+
+Ở phần này, chúng ta đã áp dụng các giải pháp kỹ thuật tinh chỉnh đặc biệt phù hợp với đặc thù vật lý của tuabin gió thay vì chỉ xử lý bằng thống kê thuần túy:
 
 1. **Xử lý nhãn lỗi (Label_Error):** Dữ liệu gốc không có nhãn. Chúng ta đã fix lỗi gán nhãn vô nghĩa và tạo ra cột `Label_Error` (0: Bình thường, 1: Lỗi) chuẩn xác. Output này cho phép sử dụng ngay lập tức các mô hình học có giám sát như XGBoost.
 2. **Toán học hóa góc gió (Wind Direction):** Xóa bỏ cột góc gió thô (0-360 độ). Góc 1 độ và 359 độ vốn rất gần nhau trong thực tế, nhưng máy tính lại hiểu là cách xa 358 đơn vị. Bằng cách đẻ ra 2 cột mới là `Wind_Dir_Sin` và `Wind_Dir_Cos`, thuật toán giờ đây hiểu hoàn hảo tính chất chu kỳ vòng tròn.
@@ -28,7 +30,7 @@ Kịch bản `preprocessing.py` (chạy trên SageMaker) đóng vai trò cốt l
 
 ### 2. Thực thi Processing Job trên AWS
 
-Để yêu cầu SageMaker cấp phát máy chủ và chạy đoạn mã `preprocessing.py` ở trên, chúng ta dùng thư viện `sagemaker.sklearn.processing` qua script `processing_job.py`.
+Để yêu cầu SageMaker cấp phát máy chủ và chạy đoạn mã `preprocessing.py` ở trên, chúng xuất dùng thư viện `sagemaker.sklearn.processing` qua script `processing_job.py`.
 
 Mở Terminal và chạy lệnh sau:
 

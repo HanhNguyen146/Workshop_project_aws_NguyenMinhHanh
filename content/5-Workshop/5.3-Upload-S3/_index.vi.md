@@ -19,14 +19,29 @@ Chúng ta sẽ sử dụng script Python cùng thư viện `boto3` để tự đ
 Trong cấu trúc thư mục dự án trên máy cục bộ của bạn, hãy đảm bảo dữ liệu thô và mã nguồn đã nằm đúng vị trí:
 
 - `data/raw/T1.csv`: Tập dữ liệu cảm biến SCADA gốc chưa qua xử lý.
-- `src/preprocessing.py`: Kịch bản Python chứa logic làm sạch và xử lý dữ liệu.
+- `src/preprocessing.py`: Kịch bản Python chứa logic làm sạch và xử lý dữ liệu trên SageMaker.
+- `src/data_validation.py`: Kịch bản kiểm tra tính toàn vẹn của dữ liệu.
 - `scripts/setupS3.py`: Script tự động đẩy dữ liệu lên S3 bằng `boto3`.
 
 ---
 
-### 2. Tự động hóa tải lên S3 bằng Boto3
+### 2. Kiểm tra chất lượng dữ liệu (Data Validation)
 
-Thay vì phải tự tạo từng thư mục trên giao diện AWS, script `setupS3.py` dưới đây sẽ tự động kết nối với S3 bằng tài khoản IAM Role của bạn và đẩy các file lên đúng vị trí trong bucket.
+Trước khi đẩy dữ liệu thô lên Data Lake (S3), một nguyên tắc cực kỳ quan trọng trong MLOps là phải đảm bảo chất lượng dữ liệu đầu vào (Input Data). Nếu "dữ liệu rác" bị đẩy lên mây, nó sẽ gây lãng phí tài nguyên tính toán của SageMaker và làm hỏng toàn bộ pipeline phía sau.
+
+Dự án sử dụng module `src/data_validation.py` để tự động kiểm thử cục bộ các điều kiện nghiêm ngặt:
+1. **Required Columns:** Kiểm tra tập dữ liệu có chứa đầy đủ các cột bắt buộc (ActivePower, Wind Speed, Wind Direction, Theoretical_Power_Curve, timestamp) hay không.
+2. **Row Count:** Đảm bảo số lượng mẫu đủ lớn (tối thiểu 100 dòng) để có ý nghĩa thống kê.
+3. **Missing Values:** Cảnh báo nếu tỷ lệ dữ liệu bị thiếu vượt mức cho phép (>30%) hoặc đánh lỗi nếu vượt mức nghiêm trọng (>50%).
+4. **Data Types & Value Ranges:** Đảm bảo các đặc trưng đều mang kiểu dữ liệu số (numeric) và nằm trong giới hạn vật lý vật lý thực tế (ví dụ: góc gió chỉ từ 0-360 độ).
+
+Chỉ khi báo cáo trả về trạng thái **PASS**, dữ liệu thô mới được phép tiến hành upload lên AWS.
+
+---
+
+### 3. Tự động hóa tải lên S3 bằng Boto3
+
+Thay vì phải tự tạo từng thư mục trên giao diện AWS, script `setupS3.py` sẽ tự động kết nối với S3 bằng tài khoản IAM Role của bạn và đẩy các file lên đúng vị trí trong bucket.
 
 Mở Terminal tại thư mục gốc của dự án và chạy kịch bản đẩy dữ liệu lên S3:
 
@@ -43,6 +58,7 @@ Mở Terminal tại thư mục gốc của dự án và chạy kịch bản đ�
 
 📂 Upload source code (src/)...
  ⬆️ src/preprocessing.py → s3://amznce23/T1_AD/scripts/src/preprocessing.py
+ ⬆️ src/data_validation.py → s3://amznce23/T1_AD/scripts/src/data_validation.py
 
 📂 Upload entry-point script...
  ⬆️ src/preprocessing.py → s3://amznce23/T1_AD/scripts/preprocessing.py
@@ -56,16 +72,16 @@ Mở Terminal tại thư mục gốc của dự án và chạy kịch bản đ�
 
 ---
 
-### 3. Kiểm tra kết quả trên AWS Console
+### 4. Kiểm tra kết quả trên AWS Console
 
 1. Truy cập vào **AWS Management Console** và mở dịch vụ **Amazon S3**.
 2. Tìm và bấm vào bucket của bạn (ví dụ: `amznce23`).
 3. Đi vào thư mục `T1_AD/` (hoặc tên dự án bạn cấu hình).
 4. Bạn sẽ thấy hai cấu trúc thư mục quan trọng đã được tạo và chứa file:
    - `data/raw/`: Chứa file `T1.csv`.
-   - `scripts/`: Chứa các script tiền xử lý (`preprocessing.py`).
+   - `scripts/`: Chứa các script tiền xử lý (`preprocessing.py`, `data_validation.py`...).
 
 {{% notice success %}}
 **Hoàn tất:**
-Xin chúc mừng! Dữ liệu thô và source code của bạn đã được tải lên "Data Lake" an toàn. Giờ đây, "nguồn nguyên liệu" đã sẵn sàng để đưa vào máy chủ xử lý dữ liệu tự động của SageMaker trong bước tiếp theo.
+Xin chúc mừng! Dữ liệu thô và source code của bạn đã vượt qua khâu kiểm duyệt và được tải lên "Data Lake" an toàn. Giờ đây, "nguồn nguyên liệu" đã sẵn sàng để đưa vào máy chủ xử lý dữ liệu tự động của SageMaker trong bước tiếp theo.
 {{% /notice %}}

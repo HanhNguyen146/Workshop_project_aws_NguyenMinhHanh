@@ -16,7 +16,9 @@ To solve this, AWS provides **SageMaker Processing Job**. This feature allows us
 
 ### 1. Data Engineering Script
 
-The `preprocessing.py` script (running on SageMaker) is the core of cleaning the SCADA data. In this phase, we applied specialized technical solutions tailored to physical laws rather than purely statistical methods:
+Thanks to the strict **Data Validation** checks we performed in the previous step (ensuring the input data has no structural errors, missing columns, or invalid data types), the `preprocessing.py` script (running on SageMaker) can now focus entirely on "deep cleaning" and Feature Engineering. 
+
+In this phase, we applied specialized technical solutions tailored to the physical characteristics of wind turbines rather than purely statistical methods:
 
 1. **Label Error Handling:** The original data had no labels. We fixed the meaningless label assignment issue and created an accurate `Label_Error` column (0: Normal, 1: Error). This output allows immediate use of supervised learning models like XGBoost.
 2. **Trigonometric Wind Direction:** Removed the raw wind direction column (0-360 degrees). While 1 degree and 359 degrees are physically very close, a computer sees them as 358 units apart. By generating 2 new columns, `Wind_Dir_Sin` and `Wind_Dir_Cos`, the algorithm perfectly understands the circular, cyclical nature of wind direction.
