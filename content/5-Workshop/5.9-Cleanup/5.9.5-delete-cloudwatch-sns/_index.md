@@ -3,7 +3,7 @@ title: "Delete CloudWatch and Amazon SNS"
 date: 2026-07-30
 weight: 5
 chapter: false
-pre: " <b> 5.9.5 </b> "
+pre: " <b> 5.9.5. </b> "
 ---
 
 Finally, delete the monitoring and notification resources (if created) during the practice session.

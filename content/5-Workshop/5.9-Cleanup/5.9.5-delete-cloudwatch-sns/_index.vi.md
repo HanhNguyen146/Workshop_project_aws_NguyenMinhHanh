@@ -3,7 +3,7 @@ title: "Xóa CloudWatch và Amazon SNS"
 date: 2026-07-30
 weight: 5
 chapter: false
-pre: " <b> 5.9.5 </b> "
+pre: " <b> 5.9.5. </b> "
 ---
 
 Cuối cùng, hãy xóa các tài nguyên giám sát và thông báo (nếu có tạo) trong quá trình thực hành.

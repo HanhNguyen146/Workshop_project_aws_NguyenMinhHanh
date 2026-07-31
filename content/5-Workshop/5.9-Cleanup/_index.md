@@ -1,9 +1,9 @@
 ---
-title : "Resource Cleanup"
+title: "Resource Cleanup"
 date :  2026-07-30 
 weight: 9
 chapter : false
-pre : " <b> 5.9 </b> "
+pre: " <b> 5.9. </b> "
 ---
 
 ### System Cleanup and Cost Optimization

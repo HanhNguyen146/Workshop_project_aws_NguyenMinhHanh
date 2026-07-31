@@ -3,7 +3,7 @@ title: "Delete IAM Role"
 date: 2026-07-30
 weight: 4
 chapter: false
-pre: " <b> 5.9.4 </b> "
+pre: " <b> 5.9.4. </b> "
 ---
 
 Retaining unused Roles does not incur costs, but deleting them is a good habit to ensure the security environment is always clean, avoiding future authorization vulnerabilities.

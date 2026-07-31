@@ -3,7 +3,7 @@ title: "Delete SageMaker Endpoints"
 date: 2026-07-30
 weight: 1
 chapter: false
-pre: " <b> 5.9.1 </b> "
+pre: " <b> 5.9.1. </b> "
 ---
 
 SageMaker Endpoint is the most costly resource because it constantly maintains a server (EC2) running 24/7 waiting to serve predictions.

@@ -3,7 +3,7 @@ title: "Xóa SageMaker Model Registry"
 date: 2026-07-30
 weight: 2
 chapter: false
-pre: " <b> 5.9.2 </b> "
+pre: " <b> 5.9.2. </b> "
 ---
 
 Để giữ cho không gian làm việc gọn gàng và không tốn phí lưu trữ siêu dữ liệu (metadata), bạn nên xóa các Model Groups không còn sử dụng.

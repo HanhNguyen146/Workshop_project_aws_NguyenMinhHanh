@@ -3,7 +3,7 @@ title: "Xóa tài nguyên Amazon S3"
 date: 2026-07-30
 weight: 3
 chapter: false
-pre: " <b> 5.9.3 </b> "
+pre: " <b> 5.9.3. </b> "
 ---
 
 Amazon S3 tính phí dựa trên dung lượng dữ liệu bạn lưu trữ (gồm dữ liệu thô, dữ liệu sau xử lý và file trọng số mô hình). AWS cũng thiết lập cơ chế an toàn: bạn không thể xóa một Bucket nếu bên trong vẫn còn dữ liệu.

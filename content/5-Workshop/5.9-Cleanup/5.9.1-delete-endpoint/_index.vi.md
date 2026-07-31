@@ -3,7 +3,7 @@ title: "Xóa SageMaker Endpoints"
 date: 2026-07-30
 weight: 1
 chapter: false
-pre: " <b> 5.9.1 </b> "
+pre: " <b> 5.9.1. </b> "
 ---
 
 SageMaker Endpoint là tài nguyên tiêu tốn nhiều chi phí nhất vì luôn duy trì máy chủ (EC2) chạy 24/7 chờ phục vụ dự đoán.
